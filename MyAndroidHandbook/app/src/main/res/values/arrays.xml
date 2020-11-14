@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layout_arrays">
+        <item>FraimeLayout (простая компоновка)</item>
+        <item>ConstraintLayout (ограничительная компоновка)</item>
+        <item>LinearLayout (линейная компоновка)</item>
+        <item>RelativeLayout (относительная компоновка)</item>
+        <item>TableLayout (табличная компоновка)</item>
+        <item>GridLayout (компоновка по колонкам и строкам)</item>
+    </string-array>
+    <string-array name="views_arrays">
+        <item>TextView (текстовый элемент)</item>
+        <item>ImageView (графический элемент)</item>
+        <item>Button (кнопка)</item>
+        <item>CheckBox (чекбокс)</item>
+        <item>Switch (переключатель)</item>
+        <item>WebView (окно браузера)</item>
+    </string-array>
+    
+</resources>
