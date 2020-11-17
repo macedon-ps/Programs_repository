@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/id_layouts">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.andrey.myandroidhandbook.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/id_layouts"
+        android:name="com.andrey.myandroidhandbook.ui.layouts.LayoutsFragment"
+        android:label="@string/menu_layouts"
+        tools:layout="@layout/fragment_layouts" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.andrey.myandroidhandbook.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/id_views"
+        android:name="com.andrey.myandroidhandbook.ui.views.ViewsFragment"
+        android:label="@string/menu_views"
+        tools:layout="@layout/fragment_views" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.andrey.myandroidhandbook.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/id_codes"
+        android:name="com.andrey.myandroidhandbook.ui.codes.CodesFragment"
+        android:label="@string/menu_codes"
+        tools:layout="@layout/fragment_codes" />
+    <fragment
+        android:id="@+id/id_tips"
+        android:name="com.andrey.myandroidhandbook.ui.tips.TipsFragment"
+        android:label="@string/menu_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/id_theory"
+        android:name="com.andrey.myandroidhandbook.ui.theory.TheoryFragment"
+        android:label="@string/menu_theory"
+        tools:layout="@layout/fragment_theory" />
+
+
+
 </navigation>
