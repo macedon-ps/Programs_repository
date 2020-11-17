@@ -5,28 +5,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/id_layouts"
             android:icon="@drawable/ic_handbook_layouts_foreground"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_layouts" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/id_views"
             android:icon="@drawable/ic_handbook_views_foreground"
-            android:title="@string/menu_gallery" />
+            android:title="@string/menu_views" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/id_codes"
             android:icon="@drawable/ic_handbook_code_foreground"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_codes" />
         <item
-            android:id="@+id/nav_usefulTips"
+            android:id="@+id/id_tips"
             android:icon="@drawable/ic_handbook_tips"
-            android:title="@string/useful_tips" />
+            android:title="@string/menu_tips" />
         <item
-
-            android:id="@+id/nav_someTheory"
+            android:id="@+id/id_theory"
             android:icon="@drawable/ic_handbook_theory_foreground"
-            android:title="@string/some_theory" />
-
-
+            android:title="@string/menu_theory" />
 
     </group>
 </menu>
