@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         list = findViewById(R.id.listViewId);
-        array = getResources().getStringArray(R.array.views_arrays);
+        array = getResources().getStringArray(R.array.layout_arrays);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
         list.setAdapter(adapter);
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.id_layouts, R.id.id_views, R.id.id_codes, R.id.id_tips, R.id.id_theory)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
