@@ -3,13 +3,13 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Справочник по Android</string>
-    <string name="nav_header_subtitle">Andrey Kazanchan, v.1.1</string>
+    <string name="nav_header_subtitle">Andrey Kazanchan, v.1</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Layouts (Макеты)</string>
-    <string name="menu_gallery">Views (Элементы)</string>
-    <string name="menu_slideshow">Java codes (Код)</string>
-    <string name="useful_tips">Useful tips (Советы)</string>
-    <string name="some_theory">Some theory (Теория)</string>
+    <string name="menu_layouts">Layouts (Макеты)</string>
+    <string name="menu_views">Views (Элементы)</string>
+    <string name="menu_codes">Java codes (Код)</string>
+    <string name="menu_tips">Useful tips (Советы)</string>
+    <string name="menu_theory">Some theory (Теория)</string>
 </resources>
