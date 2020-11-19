@@ -1,6 +1,8 @@
 package com.andrey.myandroidhandbook;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
 import android.view.Menu;
 import android.support.design.widget.NavigationView;
 
@@ -12,10 +14,14 @@ import androidx.navigation.ui.NavigationUI;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ListView list ;
@@ -29,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         list = findViewById(R.id.listViewId);
         array = getResources().getStringArray(R.array.layout_arrays);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<String>(Arrays.asList(array)));
         list.setAdapter(adapter);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -61,5 +67,45 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        int id = menuItem.getItemId();
+        if(id==R.id.id_layouts){
+            array = getResources().getStringArray(R.array.layout_arrays);
+            adapter.clear();
+            adapter.addAll(array);
+            adapter.notifyDataSetChanged();
+        }
+        if(id==R.id.id_views){
+            array = getResources().getStringArray(R.array.views_arrays);
+            adapter.clear();
+            adapter.addAll(array);
+            adapter.notifyDataSetChanged();
+        }
+        if(id==R.id.id_codes){
+            array = getResources().getStringArray(R.array.codes_arrays);
+            adapter.clear();
+            adapter.addAll(array);
+            adapter.notifyDataSetChanged();
+        }
+        if(id==R.id.id_tips){
+            array = getResources().getStringArray(R.array.tips_arrays);
+            adapter.clear();
+            adapter.addAll(array);
+            adapter.notifyDataSetChanged();
+        }
+        if(id==R.id.id_theory){
+            array = getResources().getStringArray(R.array.theory_arrays);
+            adapter.clear();
+            adapter.addAll(array);
+            adapter.notifyDataSetChanged();
+        }
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
