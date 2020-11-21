@@ -19,26 +19,26 @@
     <string-array name="codes_arrays">
         <item>Создание всплывающего сообщения (Toast)</item>
         <item>Создание меню (Menu)</item>
-        <item>Кликабельность кнопки</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
+        <item>Создание кнопок-переключателей (ToggleButton)</item>
+        <item>Создание индикатора прогресса (ProgressBarr)</item>
+        <item>Создание показателя рейтинга (RatingBar)</item>
+        <item>Создание слайдера (SeekBar)</item>
     </string-array>
     <string-array name="tips_arrays">
         <item>Горячие клавиши в Android Studio</item>
         <item>Автосохранение в Android Studio</item>
-        <item>Изменить размер текста в Android Studio</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
+        <item>Измененение размера текста в Android Studio</item>
+        <item>Изменение названия папки (Package) </item>
+        <item>Как выбрать цвет фона</item>
+        <item>Как выбрать шрифт текста</item>
     </string-array>
     <string-array name="theory_arrays">
         <item>Структура Android приложения</item>
         <item>Lifecicle Activity</item>
+        <item>Ресурсы Android приложения</item>
+        <item>Material Design</item>
         <item>Интенты</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
-        <item>Резерв</item>
+        <item>Адаптеры</item>
     </string-array>
 
 </resources>

@@ -6,14 +6,14 @@ import android.arch.lifecycle.ViewModel;
 
 public class LayoutsViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
-
-    public LayoutsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("LAYOUTS");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
-    }
+//    private MutableLiveData<String> mText;
+//
+//    public LayoutsViewModel() {
+//        mText = new MutableLiveData<>();
+//        mText.setValue("LAYOUTS");
+//    }
+//
+//    public LiveData<String> getText() {
+//        return mText;
+//    }
 }
