@@ -6,14 +6,14 @@ import android.arch.lifecycle.ViewModel;
 
 public class TipsViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
-
-    public TipsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("SOME USEFUL TIPS");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
-    }
+//    private MutableLiveData<String> mText;
+//
+//    public TipsViewModel() {
+//        mText = new MutableLiveData<>();
+//        mText.setValue("SOME USEFUL TIPS");
+//    }
+//
+//    public LiveData<String> getText() {
+//        return mText;
+//    }
 }

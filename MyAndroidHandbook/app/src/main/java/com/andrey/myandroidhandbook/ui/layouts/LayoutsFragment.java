@@ -23,12 +23,12 @@ public class LayoutsFragment extends Fragment {
                 new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(LayoutsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_layouts, container, false);
         final TextView textView = root.findViewById(R.id.text_layouts);
-        layoutsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        layoutsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }
