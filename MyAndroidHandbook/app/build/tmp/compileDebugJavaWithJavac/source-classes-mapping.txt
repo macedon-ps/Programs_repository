@@ -1,0 +1,27 @@
+com/andrey/myandroidhandbook/ui/tips/TipsViewModel.java
+ com.andrey.myandroidhandbook.ui.tips.TipsViewModel
+com/andrey/myandroidhandbook/ui/theory/TheoryFragment.java
+ com.andrey.myandroidhandbook.ui.theory.TheoryFragment
+com/andrey/myandroidhandbook/ui/codes/CodesViewModel.java
+ com.andrey.myandroidhandbook.ui.codes.CodesViewModel
+com/andrey/myandroidhandbook/ui/theory/TheoryViewModel.java
+ com.andrey.myandroidhandbook.ui.theory.TheoryViewModel
+com/andrey/myandroidhandbook/ui/tips/TipsFragment.java
+ com.andrey.myandroidhandbook.ui.tips.TipsFragment
+com/andrey/myandroidhandbook/ui/views/ViewsViewModel.java
+ com.andrey.myandroidhandbook.ui.views.ViewsViewModel
+com/andrey/myandroidhandbook/BuildConfig.java
+ com.andrey.myandroidhandbook.BuildConfig
+com/andrey/myandroidhandbook/ui/codes/CodesFragment.java
+ com.andrey.myandroidhandbook.ui.codes.CodesFragment
+com/andrey/myandroidhandbook/ui/layouts/LayoutsFragment.java
+ com.andrey.myandroidhandbook.ui.layouts.LayoutsFragment
+com/andrey/myandroidhandbook/ui/layouts/LayoutsViewModel.java
+ com.andrey.myandroidhandbook.ui.layouts.LayoutsViewModel
+com/andrey/myandroidhandbook/ui/views/ViewsFragment.java
+ com.andrey.myandroidhandbook.ui.views.ViewsFragment
+com/andrey/myandroidhandbook/Text_Content_Activity.java
+ com.andrey.myandroidhandbook.Text_Content_Activity
+com/andrey/myandroidhandbook/MainActivity.java
+ com.andrey.myandroidhandbook.MainActivity
+ com.andrey.myandroidhandbook.MainActivity$1

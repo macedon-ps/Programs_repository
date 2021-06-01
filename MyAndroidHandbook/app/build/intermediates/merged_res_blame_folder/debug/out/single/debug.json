@@ -1,0 +1,394 @@
+[
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_views_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_views_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_layouts.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_layouts.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_views.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_views.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_views.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_views.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_tips_1.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_tips_1.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_layouts.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_layouts.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_code_foreground.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_code_foreground.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_views_foreground.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_views_foreground.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_theory.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_theory.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_code_background.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_code_background.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_code.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_code.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_theory.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_theory.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_marshmallow.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_marshmallow.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_tips.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_tips.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_theory.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_theory.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_views.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_views.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_layouts.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_layouts.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tips.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_tips.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_theory_background.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_theory_background.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_theory_1.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_theory_1.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_theory_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_theory_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_views_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_views_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_views_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_views_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_theory.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_theory.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_layouts.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_layouts.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_codes.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_codes.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_views.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_views.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_layouts_round.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_layouts_round.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_views_background.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_views_background.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_theory_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_theory_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_tips.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_tips.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_layouts_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_layouts_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_code.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_code.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_theory.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_theory.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_views.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_views.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_layouts_1.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_layouts_1.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_theory_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_theory_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_code.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_code.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gallery.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_theory.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_theory.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_layouts_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_layouts_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_tips.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_tips.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_theory.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_theory.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_theory_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_theory_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_layouts.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_layouts.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_code.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_code.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_theory_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_theory_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_code.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_code.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_layouts_background.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_layouts_background.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_views_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_views_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_theory_foreground.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_theory_foreground.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_tips.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_tips.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_code.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_code.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_codes_1.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_codes_1.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_tips.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_tips.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_handbook_views_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_handbook_views_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_views_round.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_views_round.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_handbook_layouts.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xhdpi\\ic_handbook_layouts.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_views.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_views.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_content.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\text_content.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_picture_id.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\picture_id.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_views_1.jpg.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\android_views_1.jpg"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slideshow.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_views.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_views.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_handbook_layouts_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-hdpi\\ic_handbook_layouts_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_tips.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_tips.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_layouts.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_layouts.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_handbook_theory_round.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_handbook_theory_round.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_tips.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_tips.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_handbook_layouts_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-mdpi\\ic_handbook_layouts_round.png"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_handbook_layouts_foreground.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\ic_handbook_layouts_foreground.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_handbook_layouts_round.png.flat",
+        "source": "D:\\ANDROID_PROJECRS\\MyAndroidHandbook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_handbook_layouts_round.png"
+    }
+]
