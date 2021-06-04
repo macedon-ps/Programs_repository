@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Игральные карты</title>
+    <style>
+        body {
+            background: #f6f6f6;
+            padding-left: 2em;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        .cardLine>div {
+            display: inline-flex;
+            justify-content: center;        /*Центрирование по горизонтали*/
+            align-items: center;            /*Центрирование по вертикали*/
+            width: 2em;
+            height: 1.5em;
+            font-size: 6em;
+            margin: 6px;
+            background-color: #e0e0e0;
+        }
+
+        .hearts,
+        .diams {
+            color: #950000;
+        }
+
+        .clubs,
+        .spades {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Player 1:</h1>
+    <div class="cardLine">
+        <div class="clubs">2&clubs;</div>
+        <div class="hearts">9&hearts;</div>
+        <div class="hearts">6&hearts;</div>
+        <div class="diams">A&diams;</div>
+        <div class="spades">Q&spades;</div>
+        <div class="clubs">J&clubs;</div>
+    </div>
+    <h1>Player2:</h1>
+    <div class="cardLine">
+        <div class="hearts">3&hearts;</div>
+        <div class="clubs">A&clubs;</div>
+        <div class="clubs">10&clubs;</div>
+        <div class="diams">K&diams;</div>
+        <div class="spades">8&spades;</div>
+        <div class="hearts">3&hearts;</div>
+    </div>
+
+</body>
+
+</html>
