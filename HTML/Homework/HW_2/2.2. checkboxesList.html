@@ -14,9 +14,8 @@
         }
 
         li {
-            height: 3em;
+            padding: 1em;
             padding-left: 40px;
-            /* list-style-type: none; */
             list-style-position: inside;
             list-style-image: url(icons/unchecked_16.png);
         }
@@ -28,10 +27,23 @@
         li:nth-of-type(even) {
             background: #add8e6;
         }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked+label {
+            background: grey;
+        }
+
+        label {
+            vertical-align: middle;
+        }
     </style>
 </head>
 
 <body>
+    
     <h1>My To Do List</h1>
 
     <form>
@@ -61,9 +73,8 @@
             <li><input type="checkbox" id="EatDinner" name="">
                 <label for="EatDinner">Eat dinner</label>
             </li>
-            <li><input type="checkbox" id="HitGym" name="">
-                <label for="HitGym">Hit the gym</label>
-                Buy apples
+            <li><input type="checkbox" id="BuyApples" name="">
+                <label for="BuyApples">Buy apples</label>
             </li>
             <li><input type="checkbox" id="MeetGeorge" name="">
                 <label for="MeetGeorge">Meet George</label>
@@ -79,10 +90,6 @@
             </li>
         </ul>
     </form>
-
-
-
-
 </body>
 
 </html>
