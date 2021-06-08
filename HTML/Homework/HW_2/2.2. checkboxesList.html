@@ -17,7 +17,8 @@
             padding: 1em;
             padding-left: 40px;
             list-style-position: inside;
-            list-style-image: url(icons/unchecked_16.png);
+            list-style-type: none;
+            /* list-style-image: url(icons/unchecked_16.png); */
         }
 
         li:nth-of-type(odd) {
@@ -32,12 +33,19 @@
             display: none;
         }
 
-        input[type="checkbox"]:checked+label {
-            background: grey;
+        input[type="checkbox"]:checked+label::before {
+            
+            background-image: url(icons/checked_16.png);
         }
 
-        label {
-            vertical-align: middle;
+        label::before {
+            margin-right: 1em;
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url(icons/unchecked_16.png);
+            /* vertical-align: middle; */
         }
     </style>
 </head>
