@@ -1,3 +1,8 @@
+<!-- Реализовать html-страницу со списком задач. 
+Для визуального разделения списка четные и нечетные элементы имеют голубой фон с разными оттенками. 
+Отмеченные элементы имеют серый фон, иконку с галочкой и их текст зачеркнут. Неотмеченные элементы списка отображаются с иконкой без галочки. 
+Красный крестик можно отобразить с помощью спецсимвола. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +21,7 @@
         li {
             padding: 1em;
             padding-left: 40px;
+            display: flex;
             list-style-position: inside;
             list-style-type: none;
         }
@@ -27,15 +33,9 @@
         li:nth-of-type(even) {
             background: #add8e6;
         }
-
+        
         input[type="checkbox"] {
             display: none;
-        }
-
-        input[type="checkbox"]:checked+label::before {
-            
-            background-image: url(icons/checked_16.png);
-            
         }
         
         input[type="checkbox"]:checked+label {
@@ -43,6 +43,11 @@
            text-decoration: line-through;
         }
 
+        
+        input[type="checkbox"]:checked+label::before {
+            
+            background-image: url(icons/checked_16.png);
+        }
         
         label::before {
             margin-right: 1em;
@@ -53,10 +58,12 @@
             background-image: url(icons/unchecked_16.png);
         }
 
-        label:checked{
-            text-decoration: line-through;
+        .x{
+            margin-left: 1em;
+            content: 'х';
+            color: red;
         }
-        
+
     </style>
 </head>
 
@@ -68,43 +75,88 @@
 
         <ul>
             <li>
-                <input type="checkbox" id="HitGym" name="">
-                <label for="HitGym">Hit the gym</label>
+                <div>
+                    <input type="checkbox" id="HitGym" name="">
+                    <label for="HitGym">Hit the gym</label>
+                </div>
+                <div class="x">x</div>
             </li>
             <li>
-                <input type="checkbox" id="PayBills" name="">
-                <label for="PayBills">Pay bills</label>
+                <div>
+                    <input type="checkbox" id="PayBills" name="">
+                    <label for="PayBills">Pay bills</label>
+                </div>
+                <div class="x">x</div>
             </li>
             <li>
-                <input type="checkbox" id="MeetJohn" name="">
-                <label for="MeetJohn">Meet John</label>
+                <div>
+                    <input type="checkbox" id="MeetJohn" name="">
+                    <label for="MeetJohn">Meet John</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="BuyEggs" name="">
-                <label for="BuyEggs">Buy eggs</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="BuyEggs" name="">
+                    <label for="BuyEggs">Buy eggs</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="ReadBook" name="">
-                <label for="ReadBook">Read a book</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="ReadBook" name="">
+                    <label for="ReadBook">Read a book</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="OrganOffice" name="">
-                <label for="OrganOffice">Organize office</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="OrganOffice" name="">
+                    <label for="OrganOffice">Organize office</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="EatDinner" name="">
-                <label for="EatDinner">Eat dinner</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="EatDinner" name="">
+                    <label for="EatDinner">Eat dinner</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="BuyApples" name="">
-                <label for="BuyApples">Buy apples</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="BuyApples" name="">
+                    <label for="BuyApples">Buy apples</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="MeetGeorge" name="">
-                <label for="MeetGeorge">Meet George</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="MeetGeorge" name="">
+                    <label for="MeetGeorge">Meet George</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="FeedCat" name="">
-                <label for="FeedCat">Feed the cat</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="FeedCat" name="">
+                    <label for="FeedCat">Feed the cat</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="WriteLetter" name="">
-                <label for="WriteLetter">Write a letter</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="WriteLetter" name="">
+                    <label for="WriteLetter">Write a letter</label>
+                </div>
+                <div class="x">x</div>
             </li>
-            <li><input type="checkbox" id="RunKm" name="">
-                <label for="RunKm">Run 1 kmm</label>
+            <li>
+                <div>
+                    <input type="checkbox" id="RunKm" name="">
+                    <label for="RunKm">Run 1 kmm</label>
+                </div>
+                <div class="x">x</div>
             </li>
         </ul>
     </form>
