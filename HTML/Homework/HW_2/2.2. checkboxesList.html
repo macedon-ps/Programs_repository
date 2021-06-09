@@ -12,6 +12,7 @@
     <style>
         body {
             width: 80%;
+            font-size: 1.2em;
         }
 
         h1 {
@@ -38,17 +39,6 @@
             display: none;
         }
         
-        input[type="checkbox"]:checked+label {
-            
-           text-decoration: line-through;
-        }
-
-        
-        input[type="checkbox"]:checked+label::before {
-            
-            background-image: url(icons/checked_16.png);
-        }
-        
         label::before {
             margin-right: 1em;
             content: "";
@@ -63,7 +53,18 @@
             content: 'х';
             color: red;
         }
+        
+        input[type="checkbox"]:checked+label {
+            
+            background: #e2e2e2;
+            padding: 1em 0;
+            text-decoration: line-through;
+        }
 
+        input[type="checkbox"]:checked+label::before {
+            background-image: url(icons/checked_16.png);
+        }
+        
     </style>
 </head>
 
@@ -74,21 +75,21 @@
     <form>
 
         <ul>
-            <li>
+            <li class="liChecked">
                 <div>
                     <input type="checkbox" id="HitGym" name="">
                     <label for="HitGym">Hit the gym</label>
                 </div>
                 <div class="x">x</div>
             </li>
-            <li>
+            <li class="liChecked">
                 <div>
                     <input type="checkbox" id="PayBills" name="">
                     <label for="PayBills">Pay bills</label>
                 </div>
                 <div class="x">x</div>
             </li>
-            <li>
+            <li class="liChecked">
                 <div>
                     <input type="checkbox" id="MeetJohn" name="">
                     <label for="MeetJohn">Meet John</label>
