@@ -21,6 +21,7 @@
         ol {
             background: #ed9eae;
             padding: 10px 20px;
+            counter-reset: my_counter;
         }
 
         li {
@@ -28,7 +29,16 @@
             color: #f5f5ed;
             margin: 0.5em 0;
             padding: 6px 0;
+            list-style-type: none;
+            
             list-style-position: inside;
+        }
+
+        li::before{
+            content: counter(my_counter);
+            counter-increment: my_counter;
+            padding: 0.5em 0.8em;
+            /* padding-left: 20px; */
         }
 
         span {
