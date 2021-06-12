@@ -1,0 +1,58 @@
+body {
+    width: 80%;
+    font-size: 1.2em;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+li {
+    padding: 1em 0;
+    display: block;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+li:nth-of-type(odd) {
+    background: #a5ccda;
+}
+
+li:nth-of-type(even) {
+    background: #add8e6;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label::before {
+    margin-left: 40px;
+    margin-right: 1em;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(icons/unchecked_16.png);
+}
+
+label::after {
+    margin-left: 2em;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(icons/Cancel.png);
+}
+
+input[type="checkbox"]:checked+label {
+    display: block;
+    background: #e2e2e2;
+    padding: 1em 0;
+    margin: -1em 0;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-image: url(icons/checked_16.png);
+}
