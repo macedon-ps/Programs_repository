@@ -1,13 +1,24 @@
 *{
+    font-family: sans-serif;
     color: white;
+    
+    
 }
 
-#header, #footer{
+body>div{
+    margin: 1em;
+} 
+
+#header{
     background: #923158;
+    padding: 2em 6em;
+    
 }
 
-#menu{
+#menu, #footer{
     background: #6e1237;
+    padding: 1em 6em;
+    
 }
 
 #aside1, 
@@ -15,6 +26,8 @@
 #main-content, 
 #aside3{
     background: #b65b80;
+    padding: 2em 6em;
+    
 }
 section{
     background: #db92af;
