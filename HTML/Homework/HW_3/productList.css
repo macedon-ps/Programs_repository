@@ -1,5 +1,6 @@
 body{
-    width: 80%;
+    width: 60%;
+    background: #f6f6f6;
 }
 h1,h3{
     text-align: center;
@@ -7,12 +8,21 @@ h1,h3{
 .conteiner{
     display: flex;
     flex-wrap: wrap;
+    min-width: 850px;
 }
 .fruit{
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 30px;
-    border: 2px solid black;
+    border: 2px solid #b8b8b8;
     border-radius: 30px;
+
+}
+label{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
 }
