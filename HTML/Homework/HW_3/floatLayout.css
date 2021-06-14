@@ -1,0 +1,21 @@
+*{
+    color: white;
+}
+
+#header, #footer{
+    background: #923158;
+}
+
+#menu{
+    background: #6e1237;
+}
+
+#aside1, 
+#aside2, 
+#main-content, 
+#aside3{
+    background: #b65b80;
+}
+section{
+    background: #db92af;
+}
