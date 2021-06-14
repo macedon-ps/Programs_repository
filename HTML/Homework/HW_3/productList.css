@@ -6,6 +6,8 @@ body{
     flex-wrap: wrap;
 }
 .fruit{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 30px;
     border: 2px solid black;
