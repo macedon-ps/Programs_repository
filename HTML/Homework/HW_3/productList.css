@@ -1,5 +1,7 @@
 body{
-    width: 60%;
+    /* width: 56%; */
+    max-width: 1060px;
+    min-width: 850px;
     background: #f6f6f6;
 }
 h1,h3{
@@ -8,7 +10,8 @@ h1,h3{
 .conteiner{
     display: flex;
     flex-wrap: wrap;
-    min-width: 850px;
+    /* max-width: 1200px;
+    min-width: 850px; */
 }
 .fruit{
     display: flex;
@@ -25,4 +28,8 @@ label{
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
+}
+hr{
+    width: 100%;
+    /* max-width: 1200px; */
 }
