@@ -19,7 +19,8 @@ body>div{
     
 }
 .aside-left{
-    width: 400px;
+    width: 317px;
+    margin-right: 1em;
 }
 .aside1 {
     background: #b65b80;
@@ -41,8 +42,6 @@ body>div{
     background: #b65b80;
     padding: 2em 6em;
     width: 12.5%;
-    /* clear: both; */
-    float: right;
 }
 section{
     background: #db92af;
