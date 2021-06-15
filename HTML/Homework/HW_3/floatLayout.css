@@ -29,21 +29,27 @@ body>div{
 }
 .aside2 {
     background: #b65b80;
-    padding: 2em 12em 6em 6em;
+    padding: 2em 12em 8em 6em;
     margin-bottom: 1em;
 }
 .main-center{
     background: #b65b80;
-    padding: 2em 6em 4em 6em;
+    padding: 2em 11em 4em 6em;
     width: 960px;
     margin-right: 1em;
     margin-bottom: 1em;
 }
 
 .aside-right{
+    float: left;
     background: #b65b80;
-    padding: 2em 6em;
-    width: 12.5%;
+    padding-left: 2em;
+    width: 140px;
+    height: 440px;
+}
+.aside-right h1{
+    display: block;
+    padding-left: 40px;
 }
 section{
     background: #db92af;
@@ -56,5 +62,8 @@ section{
 
 .clearfix{
     clear: both;
+}
+.symbol-color{
+    color: #b65b80;;
 }
 
