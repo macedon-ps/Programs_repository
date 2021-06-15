@@ -19,24 +19,22 @@ body>div{
     
 }
 .aside-left{
-    width: 25%;
+    width: 400px;
 }
 .aside1 {
     background: #b65b80;
     padding: 2em 6em;
     margin-bottom: 1em;
-    width: 250px;
 }
 .aside2 {
     background: #b65b80;
     padding: 2em 6em 6em;
     margin-bottom: 1em;
-    width: 250px;
 }
 .main-center{
     background: #b65b80;
     padding: 2em 6em;
-    width: 62.5%;
+    width: 500px;
 }
 
 .aside-right{
@@ -49,6 +47,10 @@ body>div{
 section{
     background: #db92af;
 }
+.conteiner div{
+    float: left;
+}
+
 .clearfix{
     clear: both;
 }
