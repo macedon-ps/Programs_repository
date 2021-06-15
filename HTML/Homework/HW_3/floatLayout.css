@@ -19,9 +19,7 @@ body>div{
     
 }
 .aside-left{
-    float: left;
     width: 25%;
-    float: left;
 }
 .aside1 {
     background: #b65b80;
@@ -50,5 +48,8 @@ body>div{
 }
 section{
     background: #db92af;
+}
+.clearfix{
+    clear: both;
 }
 
