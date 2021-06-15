@@ -27,10 +27,12 @@ body{
 }
 .images{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-h4{
-    display: inline;
-    
+.bottomFooter{
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
 }
