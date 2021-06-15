@@ -36,6 +36,8 @@ body>div{
     background: #b65b80;
     padding: 2em 6em;
     width: 500px;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .aside-right{
