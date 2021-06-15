@@ -3,3 +3,11 @@ body{
     font-family: sans-serif;
     color: white;
 }
+.flex-conteiner{
+    display: flex;
+    flex-direction: row;
+    
+}
+.flex-conteiner>div{
+    flex: 1;
+}
