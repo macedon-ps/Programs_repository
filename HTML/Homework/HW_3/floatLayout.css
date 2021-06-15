@@ -19,23 +19,23 @@ body>div{
     
 }
 .aside-left{
-    width: 317px;
+    width: 414px;
     margin-right: 1em;
 }
 .aside1 {
     background: #b65b80;
-    padding: 2em 6em;
+    padding: 2em 12em 2em 6em;
     margin-bottom: 1em;
 }
 .aside2 {
     background: #b65b80;
-    padding: 2em 6em 6em;
+    padding: 2em 12em 6em 6em;
     margin-bottom: 1em;
 }
 .main-center{
     background: #b65b80;
-    padding: 2em 6em;
-    width: 500px;
+    padding: 2em 6em 4em 6em;
+    width: 960px;
     margin-right: 1em;
     margin-bottom: 1em;
 }
@@ -47,6 +47,8 @@ body>div{
 }
 section{
     background: #db92af;
+    padding: 1em 0 4em 6em;
+    margin-bottom: 1em;
 }
 .conteiner div{
     float: left;
