@@ -22,7 +22,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 8px 0;
-    margin-left: 4em;
+    margin-left: 8em;
     
 }
 .images{
@@ -35,4 +35,8 @@ body{
     margin-top: 2em;
     align-items: center;
     justify-content: center;
+}
+hr{
+    margin-left: 3em;
+    margin-right: 3em;
 }
