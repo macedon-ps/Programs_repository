@@ -8,10 +8,13 @@
 }
 
 .conteiner>div{
-    width: inherit;
+    display: block;
     margin: 3px;
     padding: 3px;
 }
 .news1{
     width: inherit;
+}
+div>img{
+    width: 100%;
 }
