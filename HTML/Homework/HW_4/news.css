@@ -1,10 +1,8 @@
 .conteiner{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
     background: #add8e6;
     justify-content: space-evenly;
-    align-content: center;
 }
 
 .conteiner>div{
@@ -12,9 +10,7 @@
     margin: 3px;
     padding: 3px;
 }
-.news1{
-    width: inherit;
-}
+
 div>img{
     width: 100%;
 }
