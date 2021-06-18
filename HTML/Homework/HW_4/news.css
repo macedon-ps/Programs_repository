@@ -1,0 +1,7 @@
+.conteiner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background: #add8e6;
+}
+
