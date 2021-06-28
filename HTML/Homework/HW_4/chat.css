@@ -12,7 +12,9 @@
 }
 .people1 .message{
     background: #ffb6c1;
+    max-width: 400px;
 }
 .people2 .message{
     background: #add8e6;
+    max-width: 500px;
 }
