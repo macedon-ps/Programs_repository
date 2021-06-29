@@ -34,4 +34,12 @@
     width: 25%;
     margin: 2em;
 }
-
+.foto-first{
+    justify-content: flex-end;
+}
+.foto-second{
+    justify-content: flex-start;
+}
+.avatarText{
+    margin: auto 0;
+}
