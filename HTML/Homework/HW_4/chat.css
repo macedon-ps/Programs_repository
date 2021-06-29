@@ -1,8 +1,6 @@
 .conteiner{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 3px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
     background: #f5f5f5;
 }
 .people1,
