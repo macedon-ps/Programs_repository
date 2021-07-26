@@ -15,7 +15,14 @@
 // сколько ему лет и выведите результат. Текущий год укажите 
 // в коде как константу.
 
-
+    function calculateAge(){
+        let birthYear = prompt("В каком году Вы родились ?", "год рождения");
+        const date = new Date();
+        const currentYear = date.getFullYear();
+        alert(`Привет, Вам исполнилось ${currentYear-birthYear} лет!`);
+        
+    }
+    calculateAge();
 // 3. Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата. 
 
 
