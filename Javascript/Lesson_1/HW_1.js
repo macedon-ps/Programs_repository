@@ -92,17 +92,24 @@
 // его задом наперед. Для решения задачи вам понадобится 
 // оператор % (остаток от деления).
 
-    function flipNumber(){
-        let number = prompt("Введите трехзначное число", "число");
-        let turnNumber1 = number%10;
-        let turnNumber2 = (number%100 - turnNumber1)/10;
-        let turnNumber3 = (number%1000 - turnNumber1 - turnNumber2*10)/100;
-        let turnNumber = turnNumber1*100 + turnNumber2*10 + turnNumber3;
-        alert(`Вы ввели число - ${number}, перевернутое число -  ${turnNumber}`);
-    }
-    flipNumber();
+    // function flipNumber(){
+    //     let number = prompt("Введите трехзначное число", "число");
+    //     let turnNumber1 = number%10;
+    //     let turnNumber2 = (number%100 - turnNumber1)/10;
+    //     let turnNumber3 = (number%1000 - turnNumber1 - turnNumber2*10)/100;
+    //     let turnNumber = turnNumber1*100 + turnNumber2*10 + turnNumber3;
+    //     alert(`Вы ввели число - ${number}, перевернутое число -  ${turnNumber}`);
+    // }
+    // flipNumber();
 
 
 // 10. Запросите у пользователя целое число и выведите в ответ, 
 // четное число или нет. В задании используйте логические 
 // операторы. В задании не надо использовать if или switch.
+
+    function evenOrOdd(){
+        let number = prompt("Введите число, отличное от 0", "число");
+        number%2 === 0 ? alert(`Число ${number} является четным`) : alert(`Число ${number} является нечетным`);
+    }
+    evenOrOdd();
+    
