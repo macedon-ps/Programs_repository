@@ -67,13 +67,14 @@
 
     let sizeOfFile = 820;
     function numberOfFlash(){
-        let volumeOfFlash = 1024*prompt("Укажите объем флешки (Гб)", "объем флешки");
-        
-        if(volumeOfFlash%sizeOfFile===0){
-            alert(`Во флешке объемом ${volumeOfFlash/1024} Гб помещается ровно ${volumeOfFlash/sizeOfFile} флешек по ${sizeOfFile} Мб`);
+        let volumeOfFlash = prompt("Укажите объем флешки (Гб)", "объем флешки");
+        let volumeOfFlashMB = volumeOfFlash*1024;
+
+        if(volumeOfFlashMB%sizeOfFile===0){
+            alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ровно ${volumeOfFlashMB/sizeOfFile} флешек по ${sizeOfFile} Мб`);
         }
         else {
-            alert(`Во флешке объемом ${volumeOfFlash/1024} Гб помещается ${parseInt(volumeOfFlash/sizeOfFile)} флешек по ${sizeOfFile} Мб и остается свободное пространство размером ${volumeOfFlash%sizeOfFile} Мб`);
+            alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ${parseInt(volumeOfFlashMB/sizeOfFile)} флешек по ${sizeOfFile} Мб и остается свободное пространство размером ${volumeOfFlashMB%sizeOfFile} Мб`);
         }
     }
     numberOfFlash();
