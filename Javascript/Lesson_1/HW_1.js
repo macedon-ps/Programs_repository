@@ -65,24 +65,28 @@
 // 7. Пользователь указывает объем флешки в Гб. Программа 
 // должна посчитать сколько файлов размером в 820 Мб помещается на флешку.
 
-    let sizeOfFile = 820;
-    function numberOfFlash(){
-        let volumeOfFlash = prompt("Укажите объем флешки (Гб)", "объем флешки");
-        let volumeOfFlashMB = volumeOfFlash*1024;
+    // let sizeOfFile = 820;
+    // function numberOfFlash(){
+    //     let volumeOfFlash = prompt("Укажите объем флешки (Гб)", "объем флешки");
+    //     let volumeOfFlashMB = volumeOfFlash*1024;
 
-        if(volumeOfFlashMB%sizeOfFile===0){
-            alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ровно ${volumeOfFlashMB/sizeOfFile} флешек по ${sizeOfFile} Мб`);
-        }
-        else {
-            alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ${parseInt(volumeOfFlashMB/sizeOfFile)} флешек по ${sizeOfFile} Мб и остается свободное пространство размером ${volumeOfFlashMB%sizeOfFile} Мб`);
-        }
+    //     if(volumeOfFlashMB%sizeOfFile===0){
+    //         alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ровно ${volumeOfFlashMB/sizeOfFile} флешек по ${sizeOfFile} Мб`);
+    //     }
+    //     else {
+    //         alert(`Во флешке объемом ${volumeOfFlash} Гб помещается ${parseInt(volumeOfFlashMB/sizeOfFile)} флешек по ${sizeOfFile} Мб и остается свободное пространство размером ${volumeOfFlashMB%sizeOfFile} Мб`);
+    //     }
+    // }
+    // numberOfFlash();
+
+// 8. Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит сколько шоколадок    // может  купить пользователь и сколько сдачи у него останется. 
+
+    function numberOfChokolates(){
+        let money = prompt("Сколько денег у Вас в кошельке ?", "количество денег");
+        let priceOfChocolate = prompt("Какая цена одной шоколадки ?", "цена шоколадки");
+        alert(`При наличии в кошельке ${money} гривен Вы можете купить ${parseInt(money/priceOfChocolate)} шоколадок и у Вас останется ${money%priceOfChocolate} гривен сдачи`)
     }
-    numberOfFlash();
-
-// 8. Пользователь вводит сумму денег в кошельке и цену одной 
-// шоколадки. Программа выводит сколько шоколадок может 
-// купить пользователь и сколько сдачи у него останется. 
-
+    numberOfChokolates();
 
 // 9. Запросите у пользователя трехзначное число и выведите 
 // его задом наперед. Для решения задачи вам понадобится 
