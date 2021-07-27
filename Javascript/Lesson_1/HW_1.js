@@ -55,16 +55,28 @@
 // 6. Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в 
 // константе.
 
-    let dollarToEuro = 0.85;
-    function exchangeRates(){
-        let dollars = prompt("Сколько долларов Вы хотите поменять на евро ?", "сумма в долларах");
-        alert(`При обменном курсе доллара к евро - ${dollarToEuro} за ${dollars} долларов Вы можете получить ${dollars*dollarToEuro} евро`);
-    }
-    exchangeRates();
+    // let dollarToEuro = 0.85;
+    // function exchangeRates(){
+    //     let dollars = prompt("Сколько долларов Вы хотите поменять на евро ?", "сумма в долларах");
+    //     alert(`При обменном курсе доллара к евро - ${dollarToEuro} за ${dollars} долларов Вы можете получить ${dollars*dollarToEuro} евро`);
+    // }
+    // exchangeRates();
 
 // 7. Пользователь указывает объем флешки в Гб. Программа 
 // должна посчитать сколько файлов размером в 820 Мб помещается на флешку.
 
+    let sizeOfFile = 820;
+    function numberOfFlash(){
+        let volumeOfFlash = 1024*prompt("Укажите объем флешки (Гб)", "объем флешки");
+        
+        if(volumeOfFlash%sizeOfFile===0){
+            alert(`Во флешке объемом ${volumeOfFlash/1024} Гб помещается ровно ${volumeOfFlash/sizeOfFile} флешек по ${sizeOfFile} Мб`);
+        }
+        else {
+            alert(`Во флешке объемом ${volumeOfFlash/1024} Гб помещается ${parseInt(volumeOfFlash/sizeOfFile)} флешек по ${sizeOfFile} Мб и остается свободное пространство размером ${volumeOfFlash%sizeOfFile} Мб`);
+        }
+    }
+    numberOfFlash();
 
 // 8. Пользователь вводит сумму денег в кошельке и цену одной 
 // шоколадки. Программа выводит сколько шоколадок может 
