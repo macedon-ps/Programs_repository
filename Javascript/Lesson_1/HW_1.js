@@ -3,48 +3,54 @@
 // 1. Запросите у пользователя его имя и выведите в ответ: 
 // «Привет, его имя!».
 
-    function greeting(){
-        let name = prompt("Как тебя зовут ?", "имя");
-        alert(`Привет, ${name}!`);
+    // function greeting(){
+    //     let name = prompt("Как тебя зовут ?", "имя");
+    //     alert(`Привет, ${name}!`);
         
-    }
-    greeting();
+    // }
+    // greeting();
         
-
 // 2. Запросите у пользователя год его рождения, посчитайте, 
 // сколько ему лет и выведите результат. Текущий год укажите 
 // в коде как константу.
 
-    function calculateAge(){
-        let birthYear = prompt("В каком году Вы родились ?", "год рождения");
-        const date = new Date();
-        const currentYear = date.getFullYear();
-        alert(`Привет, Вам исполнилось ${currentYear-birthYear} лет!`);
+    // function calculateAge(){
+    //     let birthYear = prompt("В каком году Вы родились ?", "год рождения");
+    //     const date = new Date();
+    //     const currentYear = date.getFullYear();
+    //     alert(`Привет, Вам исполнилось ${currentYear-birthYear} лет!`);
         
-    }
-    calculateAge();
+    // }
+    // calculateAge();
+
 // 3. Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата. 
 
-    function perimeterOfSquare(){
-        let length = prompt("Введите длину стороны квадрата (см)", "длина квадрата");
-        alert(`Периметр квадрата равен ${length*4} (см)`);
-    }
-    perimeterOfSquare();
+    // function perimeterOfSquare(){
+    //     let length = prompt("Введите длину стороны квадрата (см)", "длина квадрата");
+    //     alert(`Периметр квадрата равен ${length*4} (см)`);
+    // }
+    // perimeterOfSquare();
 
 // 4. Запросите у пользователя радиус окружности и выведите 
 // площадь такой окружности.
 
-    function areaOfCircle(){
-        let radius = prompt("Введите радиус окружности (см)", "радиус окружности");
-        const Pi = 3.14;
-        alert(`Площадь круга составляет ${Pi*radius*radius} (см^2)`);
-    }
-    areaOfCircle();
+    // function areaOfCircle(){
+    //     let radius = prompt("Введите радиус окружности (см)", "радиус окружности");
+    //     const Pi = 3.14;
+    //     alert(`Площадь круга составляет ${Pi*radius*radius} (см^2)`);
+    // }
+    // areaOfCircle();
 
 // 5. Запросите у пользователя расстояние в км между двумя 
 // городами и за сколько часов он хочет добраться. Посчитайте скорость, с которой необходимо двигаться, чтобы 
 // успеть вовремя.
 
+    function moveSpeed (){
+        let distance = prompt("Введите растояние между двумя городами (км)", "расстояние между городами");
+        let timeMove = prompt("За какое время Вы хотите добраться", "время движения");
+        alert(`Для того, чтобы проехать ${distance} км за ${timeMove} часов Вам необходимо двигаться со скоростью ${distance/timeMove} км/ч`);
+    }
+    moveSpeed();
 
 // 6. Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в 
 // константе.
