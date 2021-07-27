@@ -81,16 +81,26 @@
 
 // 8. Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит сколько шоколадок    // может  купить пользователь и сколько сдачи у него останется. 
 
-    function numberOfChokolates(){
-        let money = prompt("Сколько денег у Вас в кошельке ?", "количество денег");
-        let priceOfChocolate = prompt("Какая цена одной шоколадки ?", "цена шоколадки");
-        alert(`При наличии в кошельке ${money} гривен Вы можете купить ${parseInt(money/priceOfChocolate)} шоколадок и у Вас останется ${money%priceOfChocolate} гривен сдачи`)
-    }
-    numberOfChokolates();
+    // function numberOfChokolates(){
+    //     let money = prompt("Сколько денег у Вас в кошельке ?", "количество денег");
+    //     let priceOfChocolate = prompt("Какая цена одной шоколадки ?", "цена шоколадки");
+    //     alert(`При наличии в кошельке ${money} гривен Вы можете купить ${parseInt(money/priceOfChocolate)} шоколадок и у Вас останется ${money%priceOfChocolate} гривен сдачи`)
+    // }
+    // numberOfChokolates();
 
 // 9. Запросите у пользователя трехзначное число и выведите 
 // его задом наперед. Для решения задачи вам понадобится 
 // оператор % (остаток от деления).
+
+    function flipNumber(){
+        let number = prompt("Введите трехзначное число", "число");
+        let turnNumber1 = number%10;
+        let turnNumber2 = (number%100 - turnNumber1)/10;
+        let turnNumber3 = (number%1000 - turnNumber1 - turnNumber2*10)/100;
+        let turnNumber = turnNumber1*100 + turnNumber2*10 + turnNumber3;
+        alert(`Вы ввели число - ${number}, перевернутое число -  ${turnNumber}`);
+    }
+    flipNumber();
 
 
 // 10. Запросите у пользователя целое число и выведите в ответ, 
