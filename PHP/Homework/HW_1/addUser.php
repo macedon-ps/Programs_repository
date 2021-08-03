@@ -9,7 +9,6 @@
     
     <?php 
         if(!isset($_POST["submit"])) {
-        
     ?>
     <form action="addUser.php" method="POST">
         <label for="login">Введите свой логин: </label><br/>
@@ -25,10 +24,21 @@
     </form>
     <?php
         }
-        elseif(isset($_POST["submit"])){
+        elseif(isset($_POST["submit"]) and $_POST["login"] != "" and $_POST["password"] != "" and $_POST["email"] != ""){
             echo("<br/>");
-            echo("Вы " . $_POST["login"] . " успешно зарегистрированы!");
+            echo("Вы  " . $_POST["login"] . "  успешно зарегистрированы!");
     ?>
+        <br/>
+        <br/>
+        <a href="index.php">На главную страницу</a>    
+    <?php    
+        $_POST[] = NULL;
+        }
+        else
+        {
+    ?>        
+        <br/>
+        <p>Вы не зарегистрированы!</p>
         <br/>
         <br/>
         <a href="index.php">На главную страницу</a>
