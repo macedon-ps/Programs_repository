@@ -6,5 +6,17 @@
 </head>
 <body>
     <h1>Страница регистрации пользователей</h1>
+    <form action="/">
+        <label for="login">Введите свой логин: </label><br/>
+        <input type="text" name="login"><br/>
+        <label for="password">Введите свой пароль: </label><br/>
+        <input type="password" name="password"><br/>
+        <label for="email">Введите свой электронный адрес: </label><br/>
+        <input type="email" name="email"><br/>
+        <label for="submit"></label>
+        <input type="submit" name="submit">
+        <label for="reset"></label>
+        <input type="reset" name="reset">
+    </form>
 </body>
 </html>
