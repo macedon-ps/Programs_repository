@@ -5,8 +5,13 @@
     <title>Регистрация пользователей</title>
 </head>
 <body>
-    <h1>Страница регистрации пользователей</h1>
-    <form action="/">
+<h1>Страница регистрации пользователей</h1>
+    
+    <?php 
+        if(!isset($_POST["submit"])) {
+        
+    ?>
+    <form action="addUser.php" method="POST">
         <label for="login">Введите свой логин: </label><br/>
         <input type="text" name="login"><br/>
         <label for="password">Введите свой пароль: </label><br/>
@@ -18,5 +23,17 @@
         <label for="reset"></label>
         <input type="reset" name="reset">
     </form>
+    <?php
+        }
+        elseif(isset($_POST["submit"])){
+            echo("<br/>");
+            echo("Вы " . $_POST["login"] . " успешно зарегистрированы!");
+    ?>
+        <br/>
+        <br/>
+        <a href="index.php">На главную страницу</a>
+    <?php
+        }
+    ?>
 </body>
 </html>
