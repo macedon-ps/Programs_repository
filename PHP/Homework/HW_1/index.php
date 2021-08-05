@@ -8,12 +8,16 @@
     <nav>
         <div class="addUser">
             <button>
-                <a href="addUser.php">Add new user</a>
+                <?php 
+                    echo'<a href="addUser.php">Add new user</a>';
+                ?>
             </button>
         </div>
         <div class="showUsers">
         <button>
-                <a href="showUsers.php">Show all users</a>
+                <?php
+                    echo'<a href="showUsers.php">Show all users</a>';
+                ?>
             </button>
         </div>
     </nav>
