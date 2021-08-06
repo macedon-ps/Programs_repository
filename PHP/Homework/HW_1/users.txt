@@ -11,3 +11,4 @@ Andre: 31dcca59532b770a2c3a975bc55a6153: andre@gmail.com
 &lt;piccolo&gt;: 8d0936bd54ee2561f4b515abe6e08030: piccolo@pic.nic
 Vasylisa: 6b9504bb904ff678ab956858636d7e88: Vasylisa@gmail.com
 Garry_Potter: f1da79b579b96aa8fad6753c0e3b41c7: PotterG@hogwards.com
+Peneloppa_Crus: e7f6b76f30fb3b6a7676bf17ded63ae2: penelopa@gmail.com
