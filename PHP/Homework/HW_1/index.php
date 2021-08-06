@@ -6,6 +6,16 @@
 </head>
 <body>
     <nav>
+        <div class="info-users">
+            <p>
+               На сайте зарегистрировано: 
+               <span>
+                   <?php include_once("functions.php");
+                         $count = countOfUsers();
+                         echo($count);?>
+                </span> пользователей
+            </p>
+        </div>
         <div class="addUser">
             <button>
                 <?php 
