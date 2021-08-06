@@ -1,0 +1,58 @@
+body{
+    background: rgb(235, 243, 118);
+}
+h1,h2,h3{
+    display: inline;
+    text-align: center;
+}
+.container-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    background: rgb(134, 210, 230);
+    height: 100vh;
+}
+.info-users{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+span{
+    font-size: 2em;
+    font-weight: 700;
+    color: blue;
+}
+.addUser,
+.showUsers{
+    display: flex;
+    justify-content: center;
+    margin-top: 6em;
+}
+.btn{
+    font-size: 2em;
+    border: black 2px solid;
+    border-radius: 10px;
+    background: rgb(61, 236, 90);
+}
+.btn a{
+    text-decoration: none;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: black 2px solid;
+}
+.titleTable{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+form{
+    margin: 0 auto;
+    margin-top: 5em;
+    padding-top: 3em;
+}
+.input-item{
+    margin-bottom: 10px;
+}
