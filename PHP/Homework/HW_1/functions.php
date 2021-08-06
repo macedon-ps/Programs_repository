@@ -53,7 +53,11 @@ function verification($log, $pass, $eml){
         return false;
     }
 }
+?>
 
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<?php
 function register($log, $pass, $eml){
     
     $file = "D:\OpenServer\domains\menuUsers\users.txt";
@@ -80,6 +84,31 @@ function register($log, $pass, $eml){
     echo("<br/>" . "<br/>" . '<a href="index.php">На главную страницу</a>');
     return true;    
 }
+?>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<?php
+function showUsers(){
+    global $pathToFile;
+    $pathToFile = "D:\OpenServer\domains\menuUsers\users.txt";
+    
+    if(file_exists($pathToFile)){
+        $buffer = fopen($pathToFile, "r");
+        while($str = fgets($buffer, 4096)){
+            $nameFromStr = substr($str, 0, strpos($str, ":"));
+            $cursorPosition = strlen($nameFromStr)+2;
+                        
+            $passwordFromStr = substr($str, $cursorPosition, 32);
+            $cursorPosition += (strlen($passwordFromStr)+2);
+
+            $emailFromStr = substr($str, $cursorPosition);
+                        
+            echo"<tr><td>" . $nameFromStr . "</td><td>" . $passwordFromStr . "</td><td>" . $emailFromStr . "</td></tr>";    
+        }    
+    }    
+}
+
 ?>
 
 
