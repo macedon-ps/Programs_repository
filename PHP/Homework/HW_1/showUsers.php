@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Страница всех пользователей</h1>
+    <table border="1">
+        <caption>Зарегистрированные пользователи: </caption>
+        <tr><td>Логины пользователей</td><td>Хешированные пароли пользователей</td><td>Электронные адреса пользователей</td></tr>
+
+    <?php
+        include_once("functions.php");
+        showUsers();
+    ?>
+
+    </table>
 </body>
 </html>
