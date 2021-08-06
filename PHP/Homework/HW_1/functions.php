@@ -107,10 +107,26 @@ function showUsers(){
             echo"<tr><td>" . $nameFromStr . "</td><td>" . $passwordFromStr . "</td><td>" . $emailFromStr . "</td></tr>";    
         }    
     }    
+    return true;
 }
-
 ?>
 
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+<?php
+function countOfUsers(){
+    global $pathToFile;
+    $pathToFile = "D:\OpenServer\domains\menuUsers\users.txt";
+    global $count;
+    $count = 0;
 
-
+    if(file_exists($pathToFile)){
+        $buffer = fopen($pathToFile, "r");
+        
+        while($str = fgets($buffer, 4096)){
+            $count += 1;
+        }    
+    }  
+    return $count;  
+}
+?>
