@@ -22,6 +22,9 @@
         <label for="reset"></label>
         <input type="reset" name="reset">
     </form>
+    <br/>
+    <br/>
+    <a href="index.php">На главную страницу</a>
     <?php
         }
         

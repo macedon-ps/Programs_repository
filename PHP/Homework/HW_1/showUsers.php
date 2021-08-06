@@ -18,5 +18,9 @@
     ?>
 
     </table>
+    <br/>
+    <br/>
+    <a href="index.php">На главную страницу</a>
+
 </body>
 </html>
