@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+
+<!-- Реализовать html-страницу с досками задач.
+Требования:
+■ страница всегда растягивается на всю высоту и ширину экрана;
+■ ширина доски от 300 до 400 пикселей (доска – это темно-серый блок с заголовком, к примеру заголовком To Do); 
+■ если задач на доске больше, чем высота экрана, то на доске должен появляться вертикальный скролл;
+■ если все доски не помещаются в ширину экрана, то должен появляться горизонтальный скролл;
+■ при горизонтальном скролле заголовок MY BOARDS должен оставаться на месте. -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +15,20 @@
     <link rel="stylesheet" href="taskList.css">
 </head>
 <body>
-    
+    <section class="toDo">
+        <div class="toDo-article"></div>
+        <div class="toDo-article"></div>
+        <div class="toDo-article"></div>
+    </section>
+    <section class="inProgress">
+        <div class="inProgress"></div>
+        <div class="inProgress"></div>
+    </section>
+    <section class="test">
+        <div class="test"></div>
+        <div class="test"></div>
+        <div class="test"></div>
+    </section>
+
 </body>
 </html>
