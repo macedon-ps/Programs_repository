@@ -2,16 +2,20 @@
     color: white;
     font-family: sans-serif;
     text-transform: uppercase;
-    padding: 1em 3em;
+    padding: 0.8em 3em;
     margin-left: -1em;
-    margin-top: 2em;
+    margin-top: 1.2em;
     background: #db6423;
+    
 }
 .container{
     width: 90%;
-    margin: 0 auto;
+    margin: 3em auto;
+    /* margin-top: 3em; */
     padding-top: 1em;
     background: #9fcdcd;
+    height: 85vh;
+    border-radius: 15px;
 }
 input{
     background: #a9d2d2;
