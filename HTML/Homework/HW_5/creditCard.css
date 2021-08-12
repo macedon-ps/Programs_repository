@@ -1,7 +1,16 @@
 .main-header{
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    margin-left: -1em;
+    margin-top: 2em;
     background: #db6423;
 }
 .container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
     background: #9fcdcd;
 }
 input{
