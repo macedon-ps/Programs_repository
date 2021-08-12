@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- Реализовать html-страницу с формой для ввода данных кредитной карты. 
+<!-- Реализовать html-страницу с формой для ввода данных кредитной карты. 
 Форма состоит из полей для ввода:
 ■ номера кредитной карты;  
 ■ имени владельца;
@@ -14,6 +14,34 @@
     <link rel="stylesheet" href="creditCard.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Credit card details</h1>
+        <div class="forms">
+            <form>
+                <div class="form-card-number">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" class="card-number">
+                </div>
+                <div class="form-card-name">
+                    <label for="card-name">Card Name</label>
+                    <input type="text" class="card-name">    
+                </div>
+                <div class="form-card-validity">
+                    <div class="card-validity">
+                        <label for="card-month">Expire Date</label>
+                        <input type="text" class="card-month">
+                    </div>
+                    <div class="card-validity">
+                        <label for="card-month"></label>
+                        <input type="text" class="card-month">
+                    </div>
+                    <div class="card-validity">
+                        <label for="card-cvv">CVV/CVN</label>
+                        <input type="text" class="card-cvv">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
