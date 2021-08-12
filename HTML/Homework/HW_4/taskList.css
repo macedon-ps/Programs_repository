@@ -1,0 +1,11 @@
+body{
+    background: #008b8b;
+}
+.main-container{
+    display: flex;
+    background: #019e9e;
+}
+section{
+    width: 33%;
+    background: #dcdcdc;
+}
