@@ -1,40 +1,84 @@
 body{
     background: #008b8b;
     margin: 0;
+    overflow: hidden;
 }
+
 .main-container{
     display: flex;
     padding: 0.8em;
     background: #019e9e;
-    
+    width: 1550px;
+    height: 600px;
+    overflow: scroll;
 }
+
 .mainHeader{
     margin-left: 2em;
     color: white;
     text-transform: uppercase;
 }
+
 .toDo,
 .inProgress,
-.test{
+.test,
+.fix,
+.done{
     margin: 0.8em;
-    padding: 1em;
+    padding: 0 1.6em;
     background: #dcdcdc;
     border-radius: 5px;
+    min-width: 400px;
+}
+
+.test{
+    width: 380px;
+    height: 800px;
+    overflow: scroll;
 }
 
 .container-toDo,
 .container-inProgress,
 .container-test
-.container-fix{
+.container-fix,
+.container-done{
     width: 100%;
 }
+
 .toDo-article,
 .inProgress-article,
-.test-article{
+.test-article,
+.fix-article,
+.done-article{
     padding: 1em;
     margin-bottom: 1em;
     background: white;
     border-radius: 5px;
 }
 
+.toDo-article-info,
+.inProgress-article-info,
+.test-article-info,
+.fix-article-info,
+.done-article-info{
+    display: flex;
+    justify-content: space-between;
+}
 
+.info-icons{
+    display: flex;
+}
+
+.info-icons-item{
+    margin: 1em 0.5em;
+}
+
+.info-icons-item span{
+    font-size: 1.6em;
+}
+
+p{
+    margin: 0;
+    font-size: 1.2em;
+    font-family: serif;
+}
