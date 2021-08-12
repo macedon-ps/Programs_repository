@@ -1,11 +1,40 @@
 body{
     background: #008b8b;
+    margin: 0;
 }
 .main-container{
     display: flex;
+    padding: 0.8em;
     background: #019e9e;
+    
 }
-section{
-    width: 33%;
+.mainHeader{
+    margin-left: 2em;
+    color: white;
+    text-transform: uppercase;
+}
+.toDo,
+.inProgress,
+.test{
+    margin: 0.8em;
+    padding: 1em;
     background: #dcdcdc;
+    border-radius: 5px;
 }
+
+.container-toDo,
+.container-inProgress,
+.container-test
+.container-fix{
+    width: 100%;
+}
+.toDo-article,
+.inProgress-article,
+.test-article{
+    padding: 1em;
+    margin-bottom: 1em;
+    background: white;
+    border-radius: 5px;
+}
+
+
