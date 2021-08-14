@@ -23,32 +23,40 @@
     <form>
         <div class="elements">
             <h3>Inputs</h3>
-            <input type="text" class="input-noactive">
-            <input type="text" class="input-activ-valid">
-            <input type="text" class="input-activ-invalid">
+            <input type="text" id="input-noactive" class="input-noactive" placeholder="enter some text">
+            <input type="text" id="input-active-valid" class="input-active-valid" placeholder="valid text" spellcheck="true">
+            <input type="text" id="input-active-invalid" class="input-active-invalid" placeholder="invalid text" spellcheck="false">
         </div>
         <div class="elements">
             <h3>Check boxes</h3>
-            <input type="checkbox" class="checkbox-activ">
-            <input type="checkbox" class="checkbox-noactiv">
+            <input type="checkbox" id="checkbox-active" class="checkbox-active" checked>
+            <label for="checkbox-active">Subscribe</label>
+            <input type="checkbox" id="checkbox-noactive" class="checkbox-noactive" checked>
+            <label for="checkbox-noactive">Subscribe</label>
         </div>
         <div class="elements">
             <h3>Radio buttons</h3>
-            <input type="radio" class="radio-activ-noactiv">
+            <fieldset>
+                <span>Gender: </span>
+                <input type="radio" id="male" class="radio-male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" class="radio-female" name="gender">
+                <label for="female">Female</label>
+            </fieldset>
         </div>
         <div class="elements">
             <h3>Buttons</h3>
-            <input type="button" class="button-activ">
-            <input type="button" class="button-activ-hover">
-            <input type="button" class="button-danger">
-            <input type="button" class="button-danger-hover">
-            <input type="button" class="button-disable">
-            <input type="button" class="button-circle-plus">
-            <input type="button" class="button-circle-minus">
+            <input type="button" class="button-activ" value="Active">
+            <input type="button" class="button-activ-hover" value="Hover">
+            <input type="button" class="button-danger" value="Danger">
+            <input type="button" class="button-danger-hover" value="Hover">
+            <input type="button" class="button-disable" value="Disable">
+            <input type="button" class="button-circle-plus" value="+">
+            <input type="button" class="button-circle-minus" value="-">
         </div>
         <div class="elements">
             <h3>Text area</h3>
-            <textarea class="textarea"></textarea>
+            <textarea class="textarea" cols="30" rows="10"></textarea>
         </div>
     </form>
 </body>
