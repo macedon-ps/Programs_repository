@@ -2,3 +2,8 @@
     width: 400px;
     height: 150px;
 }
+.button-circle-plus,
+.button-circle-minus{
+    width: 22px;
+    border-radius: 11px;
+}
