@@ -4,6 +4,38 @@
 }
 .button-circle-plus,
 .button-circle-minus{
-    width: 22px;
-    border-radius: 11px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 0.5em;
 }
+.button-active, 
+.button-active-hover,
+.button-danger,
+.button-danger-hover,
+.button-disabled{
+    padding: 0.8em 2em;
+    margin-right: 0.5em;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+}
+.button-active,
+.button-circle-plus{
+    background: #41ad49;
+}
+.button-active-hover{
+    background: #2c7731
+    ;
+}
+.button-danger,
+.button-circle-minus{
+    background: #e44061;
+}
+.button-danger-hover{
+    background: #97293f;
+}
+.button-disabled{
+    background: #808080;
+}
+
