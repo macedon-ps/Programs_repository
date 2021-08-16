@@ -14,33 +14,70 @@
 </head>
 <body>
     <div class="container">
-        <section class="registration-forms">
-            <div class="registr-forms-item">
-                <div class="logo"></div>
-                <div class="reg-form"></div>
-            </div>
-            <div class="registr-forms-item">
-                <div class="logo"></div>
-                <div class="reg-form"></div>
-            </div>
-            <div class="registr-forms-item">
-                <div class="logo"></div>
-                <div class="reg-form"></div>
-                <div class="reg-form"></div>
-            </div>
-        </section>
-        <section class="personal-forms">
-            <div class="personal-forms-items">
-                <div class="pers-form"></div>
-                <div class="pers-form"></div>
-            </div>
-            <div class="personal-forms-items"></div>
-        </section>
-        <section class="offers-forms">
-            <div class="offers-forms-item"></div>
-            <div class="offers-forms-item"></div>
-        </section>
-        <button type="submit"></button>
+        <form>
+            <section class="registration-forms">
+                <h1>Registration form</h1>
+                <div class="registr-forms-item">
+                    <div class="logo">
+                        <img src="Images/username.png" alt="user name">
+                    </div>
+                    <div class="reg-form">
+                        <input type="text" id="user-name" class="user-name" placeholder="Username">
+                    </div>
+                </div>
+                <div class="registr-forms-item">
+                    <div class="logo">
+                        <img src="Images/email.png" alt="email">
+                    </div>
+                    <div class="reg-form">
+                        <input type="email" id="email" class="emeil" placeholder="Email address">
+                    </div>
+                </div>
+                <div class="registr-forms-item">
+                    <div class="logo">
+                        <img src="Images/pswd.png" alt="password">
+                    </div>
+                    <div class="reg-form">
+                        <input type="password" id="pass" class="passwoord" placeholder="Password">
+                    </div>
+                    <div class="reg-form">
+                        <input type="password" id="pass-confirm" class="password-confirm" placeholder="Confirm password">
+                    </div>
+                </div>
+            </section>
+            <section class="personal-forms">
+                <h1>Personal details</h1>
+                <div class="personal-forms-items">
+                    <div class="pers-form">
+                        <input type="text" id="fname" class="first-name" placeholder="First name">
+                    </div>
+                    <div class="pers-form">
+                        <input type="text" id="lname" class="last-name" placeholder="Last name">
+                    </div>
+                    <div class="pers-form">
+                        <select id="gender" name="gender" class="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="pers-form">
+                        <input type="date" id="date" class="date">
+                    </div>
+                </div>
+                <div class="personal-forms-items"></div>
+            </section>
+            <section class="offers-forms">
+                <div class="offers-forms-item">
+                    <input type="checkbox" id="news-agree" class="news-agree">
+                    <label for="news-agree">I want to recive news and special offers</label>
+                </div>
+                <div class="offers-forms-item">
+                    <input type="checkbox" id="terms-agree" class="terms-agree">
+                    <label for="terms-agree">I agree with the Terms and Conditions</label>
+                </div>
+            </section>
+            <button type="submit"><span>submit</span></button>
+        </form>
     </div>
 </body>
 </html>
