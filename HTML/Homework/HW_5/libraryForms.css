@@ -1,14 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
 form{
     margin-left: 1em;
 }
 .elements{
-    margin-top: 3em;
+    margin-top: 2.5em;
 }
 h3{
     font-family: sans-serif;
     font-size: 1.3em;
 }
 
+/* свойства input type="text" */
 .text-noactive,
 .text-active-valid,
 .text-active-invalid{
@@ -23,14 +30,24 @@ h3{
 }
 .text-noactive::placeholder{
     color: initial;
+    font-size: 1.2em;
 }
 .text-active-valid{
     border-color: #41ad49;
 }
 .text-active-valid::placeholder{
     color: #41ad49;
+    font-size: 1.2em;
 }
-.text-active-valid + label,
+.text-active-invalid{
+    border-color:  #e44061;
+}
+.text-active-invalid::placeholder{
+    color: #e44061;
+    font-size: 1.2em;
+}
+/* символы "v" и "x" для input type="text"*/
+.text-active-valid + label, 
 .text-active-invalid + label{
     position: relative;
 }
@@ -41,12 +58,6 @@ h3{
     top: 0;
     color: #41ad49;
 }
-.text-active-invalid{
-    border-color:  #e44061;
-}
-.text-active-invalid::placeholder{
-    color: #e44061;
-}
 .text-active-invalid + label::after{
     content: 'x';
     position: absolute;
@@ -55,11 +66,11 @@ h3{
     color: #e44061;
 }
 
+/* свойства input type="checkbox" */
 /* скрываем стандартные checkbox */
 .checkbox-active,
 .checkbox-noactive{
     position: absolute;
-    z-index: -1;
     opacity: 0;
 }
 /* создаем свои, пользовательские checkbox */
@@ -70,7 +81,7 @@ h3{
     height: 1.2em;
     border: 2px solid black;
     border-radius: 0.25em;
-    
+    margin-right: 0.5em;
 }
 .checkbox-active + label>span{
     border-color: #41ad49;
@@ -85,6 +96,7 @@ h3{
     display: inline-flex;
     align-items: center;
     user-select: none;
+    margin-right: 1em;
 }
 .checkbox-active + label::before{
     content: '';
@@ -106,36 +118,69 @@ h3{
     border-radius: 0.25em;
     background: #e44061;
     position: absolute;
-    left: 22px;
+    left: 26px;
 }
 
-/* .checkbox-active + label,
-.checkbox-noactive + label{
-    margin-left: 3em;
+/* свойства input type="radio" */
+/* скрываем стандартные radio button */
+.radio-male,
+.radio-female{
+    position: absolute;
+    opacity: 0;
 }
-
-
-.checkbox-active + label::before{
-    content: "";
-    width: 100px;
-    height: 100px;
+/* создаем свои, пользовательские radio button */
+/* рамки */
+.radio-male + label>span,
+.radio-female + label>span{
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid black;
+    border-radius: 1.2em;
+    margin-right: 0.5em;
+}
+.radio-male + label>span{
+    border-color: #41ad49;
+}
+.radio-female + label>span{
+    border-color: #e44061;
+}
+/* переключатели */
+.radio-male + label,
+.radio-female + label{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
     margin-right: 1em;
-    background: red;
-} */
+}
+.radio-male + label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0;
+    border-radius: 1em;
+    background: #41ad49;
+    position: absolute;
+    left: 4px;
+}
+.radio-female + label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0;
+    border-radius: 1em;
+    background: #e44061;
+    position: absolute;
+    left: 4px;
+}
+.radio-label-div{
+    display: inline-block;
+    font-size: 1.1em;
+}
 
-/* input[type="radio"]{
-    transform: scale(1.5);
-    color: #41ad49; 
-    background: red;
-} */
-
-/* .radio-male{
-    transform: scale(1.5);
-    color: #41ad49; 
-    background: red;
-} */
-
-
+/* свойства input type="button" */
 .button-active, 
 .button-active-hover,
 .button-danger,
@@ -178,6 +223,7 @@ h3{
     cursor: pointer;
 }
 
+/* свойства для textarea */
 .textarea{
     width: 400px;
     height: 150px;
