@@ -23,9 +23,12 @@
     <form>
         <div class="elements">
             <h3>Inputs</h3>
-            <input type="text" id="input-noactive" class="input-noactive" placeholder="enter some text">
-            <input type="text" id="input-active-valid" class="input-active-valid" placeholder="valid text" spellcheck="true">
-            <input type="text" id="input-active-invalid" class="input-active-invalid" placeholder="invalid text" spellcheck="false">
+            <input type="text" id="text-noactive" class="text-noactive" placeholder="enter some text" disabled>
+            <label for="text-noactive"></label>
+            <input type="text" id="text-active-valid" class="text-active-valid" placeholder="valid text" spellcheck="true">
+            <label for="text-active-valid"></label>
+            <input type="text" id="text-active-invalid" class="text-active-invalid" placeholder="invalid text" spellcheck="false">
+            <label for="text-active-invalid"></label>
         </div>
         <div class="elements">
             <h3>Check boxes</h3>
@@ -36,13 +39,13 @@
         </div>
         <div class="elements">
             <h3>Radio buttons</h3>
-            <fieldset>
+            <!-- <fieldset> -->
                 <span>Gender: </span>
                 <input type="radio" id="male" class="radio-male" name="gender">
                 <label for="male">Male</label>
                 <input type="radio" id="female" class="radio-female" name="gender">
                 <label for="female">Female</label>
-            </fieldset>
+            <!-- </fieldset> -->
         </div>
         <div class="elements">
             <h3>Buttons</h3>
@@ -56,7 +59,7 @@
         </div>
         <div class="elements">
             <h3>Text area</h3>
-            <textarea class="textarea"></textarea>
+            <textarea class="textarea">Enter some text...</textarea>
         </div>
     </form>
 </body>
