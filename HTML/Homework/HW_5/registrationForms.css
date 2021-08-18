@@ -21,6 +21,10 @@ form{
     margin: 0;
     padding: 1em;
 }
+h1{
+    font-family: sans-serif;
+    font-size: 2em;
+}
 .logo{
     width: 48px;
     height: 48px;
@@ -31,8 +35,14 @@ form{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 3em 0;
+    margin: 3em 0 1em;
 }
+.offers-forms-item{
+    width: 100%;
+    margin-bottom: 2em;
+    padding-left: 1em;
+}
+
 
 .reg-form,
 .pers-form{
@@ -59,4 +69,26 @@ form{
     border: none;
     border-bottom: 1px solid black;
     background: #f5f5f5;
+}
+.button{
+    height: 4em;
+    position: relative;
+}
+.button-submit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    color: white;
+    background: #008b8b;
+    padding: 0.8em 4em;
+    border: 0;
+    border-radius: 5px;
+}
+:placeholder-shown,
+.gender,
+.date,
+.news-agree + label,
+.terms-agree + label{
+    font-size: 1.2em;
 }
