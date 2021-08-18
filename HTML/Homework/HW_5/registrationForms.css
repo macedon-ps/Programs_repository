@@ -30,6 +30,10 @@ h1{
     height: 48px;
     margin-right: 0.5em;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 .registr-forms-item,
 .personal-forms-items{
     display: flex;
@@ -42,8 +46,6 @@ h1{
     margin-bottom: 2em;
     padding-left: 1em;
 }
-
-
 .reg-form,
 .pers-form{
     width: 100%;
@@ -98,3 +100,146 @@ h1{
 .terms-agree + label{
     font-size: 1.2em;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* для экранов < 900px */
+
+@media(max-width: 900px){
+
+    .registration-forms,
+    .personal-forms,
+    .offers-forms{
+        width: 100%;
+        max-width: 900px;
+        margin: 0;
+        padding: 0.5em;
+    }
+    h1{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .logo{
+        width: 36px;
+        height: 36px;
+        margin-right: 0.5em;
+    }
+    .registr-forms-item,
+    .personal-forms-items{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1.5em 0 0.5em;
+    }
+    .offers-forms-item{
+        width: 100%;
+        margin-bottom: 1em;
+        padding-left: 0.5em;
+    }
+    .reg-form,
+    .pers-form{
+        width: 100%;
+        min-height: 36px;
+    }
+    .user-name,
+    .email,
+    .password,
+    .password-confirm,
+    .first-name,
+    .last-name,
+    .gender,
+    .date{
+        padding-left: 0.8em;
+    }
+    .button{
+        height: 3em;
+    }
+    .button-submit{
+        padding: 0.5em 2em;
+    }
+    :placeholder-shown,
+    .gender,
+    .date,
+    .news-agree + label,
+    .terms-agree + label{
+        font-size: 1em;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* для экранов < 600px */
+
+@media(max-width: 600px){
+
+    .registration-forms,
+    .personal-forms,
+    .offers-forms{
+        width: 100%;
+        max-width: 600px;
+        padding: 0.2em;
+    }
+
+    h1{
+        font-size: 1.2em;
+        margin-top: 0.7em;
+        margin-bottom: 1.2em;
+    }
+    .logo{
+        width: 24px;
+        height: 24px;
+        margin-right: 0.3em;
+    }
+    .registr-forms-item{
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+    .personal-forms-items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .offers-forms-item{
+        width: 100%;
+        padding-left: 3em;
+    }
+    .reg-form,
+    .pers-form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .reg-form2{
+        width: 100%;
+    }
+    .user-name,
+    .email,
+    .password,
+    .password-confirm,
+    .first-name,
+    .last-name,
+    .gender,
+    .date{
+        width:100%;
+        max-width: 600px;
+        min-height: 20px;
+        padding-left: 3em;
+    }
+    .password,
+    .password-confirm{
+        margin-bottom: 1.2em;
+    }
+    .button{
+        height: 2em;
+    }
+    .button-submit{
+        padding: 0.3em 1.5em;
+    }
+    :placeholder-shown,
+    .gender,
+    .date,
+    .news-agree + label,
+    .terms-agree + label{
+        font-size: 0.8em;
+    } 
+} 
