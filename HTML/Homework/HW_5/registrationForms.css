@@ -29,22 +29,30 @@ form{
 .registr-forms-item,
 .personal-forms-items{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin: 3em 0;
 }
 
-.reg-form{
+.reg-form,
+.pers-form{
     width: 100%;
+    min-height: 48px;
     display: flex;
     justify-content: space-between;
 }
-.reg-form2{
+.reg-form2,
+.pers-form{
     width: 48%;
 }
 .user-name,
 .email,
 .password,
-.password-confirm{
+.password-confirm,
+.first-name,
+.last-name,
+.gender,
+.date{
     width:100%;
     height: 100%;
     padding-left: 1em;
