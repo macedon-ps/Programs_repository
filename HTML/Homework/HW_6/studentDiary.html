@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <!-- Необходимо реализовать сайт-дневник студента. 
-На этом сайте студент может просмотреть новости учебного заведения, сдать домашние работы и следить за своей успеваемостью. 
-Вашим заданием является верстка нескольких страниц.
+На этом сайте студент может просмотреть новости учебного заведения, сдать домашние работы и следить за своей успеваемостью. Вашим заданием является верстка нескольких страниц.
 На каждой странице есть шапка, которая состоит из: 
 ■ логотипа; 
 ■ меню (Home, Homework, Settings);
@@ -54,12 +53,48 @@
 При выполнении задания обязательно использовать Bootstrap. -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Дневник студента</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/studentDiary.css">
 </head>
+
 <body>
-    
+
+    <!-- navbar -->
+    <!-- Логотип, меню, иконка -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Img</a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button>-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Homework</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+            </li>
+            
+        </ul>
+        <form class="d-flex">
+            <img src="Images/av_64.png" class="card-img-top" alt="...">
+        </form>
+            </div>
+        </div>
+    </nav>
+
+    <script src="JS/bootstrap.min.js"></script>
 </body>
+
 </html>
