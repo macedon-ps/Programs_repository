@@ -4,7 +4,25 @@
 .bg-blue{
     background: #1b5589;
 }
-.arrow-right{
+.text-right-arrow{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+.text-right-arrow>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1em;
+    border: 1px solid #dee2e6
+}
+.text-right-arrow>div>p{
+    text-align: center;
+    margin-right: 1.5em;
+    padding: 0.5em 1em 0;
+}
+.text-right-arrow>div>p + span{
     width: 2.25em;
     height: 2.25em;
     margin: 0 1.25em;
