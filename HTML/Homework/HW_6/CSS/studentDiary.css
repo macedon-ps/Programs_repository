@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     border: 1px solid #dee2e6
 }
 .text-right-arrow>div>p{
@@ -34,4 +34,36 @@
     background: white;
     opacity: 1;
     z-index: 10;
+}
+.text-left-arrow{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+}
+.text-left-arrow>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0.5em;
+    border: 1px solid #dee2e6
+}
+
+.text-left-arrow>div>span{
+    width: 2.25em;
+    height: 2.25em;
+    margin: 0 1.25em;
+    border-top: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -2.45em;
+    background: white;
+    opacity: 1;
+    z-index: 10;
+}
+.text-left-arrow>div>span + p{
+    text-align: center;
+    margin-left: 1.5em;
+    padding: 0.5em 1em 0;
 }
