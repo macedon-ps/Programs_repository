@@ -1,8 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 .navbar-nav{
     padding-left: 2rem;
 }
@@ -76,4 +71,26 @@
     max-width: 31%;
     margin: 0 1em 0;
     padding: 1em;
+}
+.colorMenu{
+    width: 20em;
+    position: absolute;
+    right: 2em;
+    top: 6em;
+}
+.colorMenu>div{
+    display: flex;
+    justify-content: flex-end;
+}
+.colorMenu>div>p{
+    margin-bottom: 0.3em;
+    margin-right: 0.5em;
+}
+.colorMenu>div>p+span{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1.5em;
+}
+.bg-light{
+    border: 1px solid grey;
 }
