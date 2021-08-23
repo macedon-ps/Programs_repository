@@ -1,9 +1,14 @@
+/* navbar */
+
 .navbar-nav{
     padding-left: 2rem;
 }
 .bg-blue{
     background: #1b5589;
 }
+
+/* page1 Home */
+
 .text-right-arrow{
     display: flex;
     justify-content: flex-end;
@@ -67,16 +72,15 @@
     margin-left: 1.5em;
     padding: 0.5em 1em 0;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* page 2 Homework */
+
 .homework{
     max-width: 31%;
     margin: 0 1em 0;
     padding: 1em;
-}
-.homework>h4,
-.homework>p,
-.homework>label,
-.homework>input{
-    z-index: 10;
 }
 .colorMenu{
     width: 20em;
@@ -117,6 +121,24 @@ h4{
     display: flex;
     justify-content: space-between;
 }
-.opasity-50{
-    opacity: 0.5;
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* page 3 Settings */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin: 2em 3em;
+    padding: 1em 3em;
+    border-radius: 5px;
+}
+.bg-blue-light{
+    background: #cce5ff;
+}
+.header>div>span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1b5589;
 }
