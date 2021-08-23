@@ -128,17 +128,42 @@ h4{
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: sans-serif;
-    margin: 2em 3em;
+    margin: 2em 0;
     padding: 1em 3em;
     border-radius: 5px;
 }
 .bg-blue-light{
     background: #cce5ff;
 }
-.header>div>span{
+.header>div,
+.header>section{
+    display: flex;
+    justify-content: center;
+}
+.header>div>h5{
     text-transform: uppercase;
     font-weight: 700;
     color: #1b5589;
+    
+}
+.avatarSection{
+    width: 16.67%;
+}
+.avatar{
+    width: 100%;
+}
+.personalData{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1em;
+}
+.personalData>input{
+    padding-left: 1em;
+}
+form>input{
+    width: 100%;
+    margin: 0.3em 1em;
 }
