@@ -129,6 +129,7 @@ h4{
 .header{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     font-family: sans-serif;
     margin: 2em 0;
     padding: 1em 3em;
@@ -140,7 +141,6 @@ h4{
 .header>div,
 .header>section{
     display: flex;
-    justify-content: center;
 }
 .header>div>h5{
     text-transform: uppercase;
@@ -154,16 +154,18 @@ h4{
 .avatar{
     width: 100%;
 }
-.personalData{
+.personalData,
+.passwordData{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 1em;
 }
-.personalData>input{
+.personalData>input,
+.passwordData>input{
     padding-left: 1em;
 }
 form>input{
     width: 100%;
-    margin: 0.3em 1em;
+    margin: 1em;
 }
