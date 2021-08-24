@@ -142,7 +142,7 @@ h4{
 
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     flex-wrap: wrap;
     font-family: sans-serif;
     margin: 2em 0;
