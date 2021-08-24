@@ -37,27 +37,31 @@
         </div>
     </nav>
 
-    <h1 class="text-center mt-3 mb-3">Домашние задания</h1>
+    <h1 class="text-center mt-3 mb-3 header-adapt">Домашние задания</h1>
 
     <!-- colorMenu -->
     <!-- Цвета, которые обозначают на какой стадии находятся домашние задания (текущее задание, на проверке, проверенное, просроченное задание) -->
 
     <div class="colorMenu">
         <div>
-            <p>текущие задания - </p>
+            <p class="p-item1-full">текущие задания - </p>
             <span class="bg-greyLight"></span>
+            <p  class="p-item1">- текущие задания</p>
         </div>
         <div>
-            <p>проверенные задания - </p>
+            <p class="p-item2-full">проверенные задания - </p>
             <span class="bg-green"></span>
+            <p class="p-item2">- проверенные задания</p>
         </div>
         <div>
-            <p>задания на проверке - </p>
+            <p  class="p-item3-full">задания на проверке - </p>
             <span class="bg-greyBlue"></span>
+            <p class="p-item3">- задания на проверке</p>
         </div>
         <div>
-            <p>просроченные задания - </p>
+            <p  class="p-item4-full">просроченные задания - </p>
             <span class="bg-red"></span>
+            <p class="p-item4">- просроченные задания</p>
         </div>
     </div>
 
@@ -71,25 +75,31 @@
 
         <form>
 
-            <div class="row gx-2">
+            <div class="row gx-2 d-flex flex-wrap">
                 
-                <div class="custom-file homework bg-greyLight col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                    <h4>Loops</h4>
-                    <p>22/08/2021</p>
-                    <label for="formFileMultiple" class="form-label"></label>
-                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyLight">
+                        <h4>Loops</h4>
+                        <p>22/08/2021</p>
+                        <label for="formFileMultiple" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
                 </div>
-                <div class="homework bg-greyBlue col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                    <h4>Conditional statements</h4>
-                    <p>11/08/2021</p>
-                    <label for="formFileMultiple2" class="form-label"></label>
-                    <input class="form-control" type="file" id="formFileMultiple2" multiple>
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyBlue">
+                        <h4>Conditional statements</h4>
+                        <p>11/08/2021</p>
+                        <label for="formFileMultiple2" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple2" multiple>
+                    </div>
                 </div>
-                <div class="homework bg-greyBlue col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                    <h4>Variables</h4>
-                    <p>23/07/2021</p>
-                    <label for="formFileMultiple3" class="form-label"></label>
-                    <input class="form-control" type="file" id="formFileMultiple3" multiple>
+                <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="homework bg-greyBlue">
+                        <h4>Variables</h4>
+                        <p>23/07/2021</p>
+                        <label for="formFileMultiple3" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFileMultiple3" multiple>
+                    </div>
                 </div>
             </div>
         </form>
@@ -103,41 +113,53 @@
         <h2 class="text-start ps-3 pb-2">HTML & CSS</h2>
         <hr class="mx-3">
         <div class="row gx-0">
-            <div class="homework bg-red col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Adaptive Layout</h4>
-                <p>23/08/2021</p>
-                <label for="formFileMultiple4" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple4" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-red">
+                    <h4>Adaptive Layout</h4>
+                    <p>23/08/2021</p>
+                    <label for="formFileMultiple4" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple4" multiple>
+                </div>
             </div>
-            <div class="homework bg-red col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Grid Layout</h4>
-                <p>19/08/2021</p>
-                <label for="formFileMultiple5" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple5" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-red">
+                    <h4>Grid Layout</h4>
+                    <p>19/08/2021</p>
+                    <label for="formFileMultiple5" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple5" multiple>
+                </div>
             </div>
-            <div class="homework bg-green col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Flexbox<span class="badge bg-success">11</span></h4>
-                <p>13/08/2021</p>
-                <label for="formFileMultiple6" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple6" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Flexbox<span class="badge bg-success">11</span></h4>
+                    <p>13/08/2021</p>
+                    <label for="formFileMultiple6" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple6" multiple>
+                </div>
             </div>
-            <div class="homework bg-green col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Animations<span class="badge bg-success">10</span></h4>
-                <p>06/08/2021</p>
-                <label for="formFileMultiple7" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple7" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Animations<span class="badge bg-success">10</span></h4>
+                    <p>06/08/2021</p>
+                    <label for="formFileMultiple7" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple7" multiple>
+                </div>
             </div>
-            <div class="homework bg-green col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Forms<span class="badge bg-success">10</span></h4>
-                <p>23/07/2021</p>
-                <label for="formFileMultiple8" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple8" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Forms<span class="badge bg-success">10</span></h4>
+                    <p>23/07/2021</p>
+                    <label for="formFileMultiple8" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple8" multiple>
+                </div>
             </div>
-            <div class="homework bg-green col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
-                <h4>Tables<span class="badge bg-success">12</span></h4>
-                <p>17/07/2021</p>
-                <label for="formFileMultiple9" class="form-label"></label>
-                <input class="form-control" type="file" id="formFileMultiple9" multiple>
+            <div class="homeworkElement col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                <div class="homework bg-green">
+                    <h4>Tables<span class="badge bg-success">12</span></h4>
+                    <p>17/07/2021</p>
+                    <label for="formFileMultiple9" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFileMultiple9" multiple>
+                </div>
             </div>
         </div>
 
