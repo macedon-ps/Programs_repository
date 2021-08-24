@@ -6,6 +6,10 @@
 .bg-blue{
     background: #1b5589;
 }
+.nav-img{
+    max-width: 64px;
+    max-height: 64px;
+}
 
 /* page1 Home */
 
@@ -190,6 +194,11 @@ form>input{
 @media(max-width: 1320px){
     .text-adapt{
         font-size: 0.8em;
+    }
+}
+@media(max-width: 991px){
+    .nav-img{
+        display: none;
     }
 }
 @media(max-width: 900px) {
