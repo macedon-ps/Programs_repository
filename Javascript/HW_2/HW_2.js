@@ -65,32 +65,45 @@
 
 // 3. Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
 
-    function numberCheck(){
-        const number = parseInt(prompt("Введите 3-х значное число", "111"));
-        if(number < 100 || number > 999) {
-            alert("Повторите еще раз. Введите 3-х значное число");
-            return false;
-        }
-        const number1 = parseInt(number%10);
-        const param1 = parseInt(number/10);
-        const number2 = parseInt(param1%10);
-        const param2 = parseInt(param1/10);
-        const number3 = param2;
+    // function numberCheck(){
+    //     const number = parseInt(prompt("Введите 3-х значное число", "111"));
+    //     if(number < 100 || number > 999) {
+    //         alert("Повторите еще раз. Введите 3-х значное число");
+    //         return false;
+    //     }
+    //     const number1 = parseInt(number%10);
+    //     const param1 = parseInt(number/10);
+    //     const number2 = parseInt(param1%10);
+    //     const param2 = parseInt(param1/10);
+    //     const number3 = param2;
 
-        alert(`number = ${number3}${number2}${number1}`);
+    //     alert(`number = ${number3}${number2}${number1}`);
                 
-        if(number1==number2 || number2==number3 || number1==number3){
-            alert(`Во введенном числе ${number} есть одинаковые цифры`);
-        }
-        else {
-            alert(`Во введенном числе ${number} все три цифры разные`);
-        }
-        return true;
-    }
-    numberCheck();
+    //     if(number1==number2 || number2==number3 || number1==number3){
+    //         alert(`Во введенном числе ${number} есть одинаковые цифры`);
+    //     }
+    //     else {
+    //         alert(`Во введенном числе ${number} все три цифры разные`);
+    //     }
+    //     return true;
+    // }
+    // numberCheck();
 
 // 4. Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
+    function isLeapYear(){
+        const currentYear = parseInt(prompt("Введите год", "2000"));
+
+        if(currentYear%400 == 0 || (currentYear%4 == 0 && currentYear%100 != 0)){
+            alert(`Введенный год - ${currentYear} является высокосным`);
+            return true;
+        }
+        else {
+            alert(`Введенный год - ${currentYear} не является высокосным`);
+            return false;
+        }
+    }
+    isLeapYear();
 
 // 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 
