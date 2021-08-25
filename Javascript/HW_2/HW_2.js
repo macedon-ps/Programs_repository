@@ -29,42 +29,65 @@
 
 // 2. Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 
-    function numberToSybol(){
-        let number = parseInt(prompt("Введите число от 0 до 9", "0"));
-        if(number<0 || number>9) {
-            alert(`Вы ввели число ${number}, которое не входит в интервал от 0 до 9. Повторите еще раз`);
-            return false;
-        }
-        switch(number){
-            case 0: alert("Числу '0' соответствует символ ')'");
-            return;
-            case 1: alert("Числу '1' соответствует символ '!'");
-            return;
-            case 2: alert("Числу '2' соответствует символ '@'");
-            return;
-            case 3: alert("Числу '3' соответствует символ '#'");
-            return;
-            case 4: alert("Числу '4' соответствует символ '$'");
-            return;
-            case 5: alert("Числу '5' соответствует символ '%'");
-            return;
-            case 6: alert("Числу '6' соответствует символ '^'");
-            return;
-            case 7: alert("Числу '7' соответствует символ '&'");
-            return;
-            case 8: alert("Числу '8' соответствует символ '*'");
-            return;
-            case 9: alert("Числу '9' соответствует символ '('");
-            return;
-            default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
-            return;
-        }
-        return true;
-    }
-    numberToSybol();
+    // function numberToSybol(){
+    //     let number = parseInt(prompt("Введите число от 0 до 9", "0"));
+    //     if(number<0 || number>9) {
+    //         alert(`Вы ввели число ${number}, которое не входит в интервал от 0 до 9. Повторите еще раз`);
+    //         return false;
+    //     }
+    //     switch(number){
+    //         case 0: alert("Числу '0' соответствует символ ')'");
+    //         return;
+    //         case 1: alert("Числу '1' соответствует символ '!'");
+    //         return;
+    //         case 2: alert("Числу '2' соответствует символ '@'");
+    //         return;
+    //         case 3: alert("Числу '3' соответствует символ '#'");
+    //         return;
+    //         case 4: alert("Числу '4' соответствует символ '$'");
+    //         return;
+    //         case 5: alert("Числу '5' соответствует символ '%'");
+    //         return;
+    //         case 6: alert("Числу '6' соответствует символ '^'");
+    //         return;
+    //         case 7: alert("Числу '7' соответствует символ '&'");
+    //         return;
+    //         case 8: alert("Числу '8' соответствует символ '*'");
+    //         return;
+    //         case 9: alert("Числу '9' соответствует символ '('");
+    //         return;
+    //         default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
+    //         return;
+    //     }
+    //     return true;
+    // }
+    // numberToSybol();
 
 // 3. Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
 
+    function numberCheck(){
+        const number = parseInt(prompt("Введите 3-х значное число", "111"));
+        if(number < 100 || number > 999) {
+            alert("Повторите еще раз. Введите 3-х значное число");
+            return false;
+        }
+        const number1 = parseInt(number%10);
+        const param1 = parseInt(number/10);
+        const number2 = parseInt(param1%10);
+        const param2 = parseInt(param1/10);
+        const number3 = param2;
+
+        alert(`number = ${number3}${number2}${number1}`);
+                
+        if(number1==number2 || number2==number3 || number1==number3){
+            alert(`Во введенном числе ${number} есть одинаковые цифры`);
+        }
+        else {
+            alert(`Во введенном числе ${number} все три цифры разные`);
+        }
+        return true;
+    }
+    numberCheck();
 
 // 4. Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
