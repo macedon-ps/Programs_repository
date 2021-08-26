@@ -91,22 +91,45 @@
 
 // 4. Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
-    function isLeapYear(){
-        const currentYear = parseInt(prompt("Введите год", "2000"));
+    // function isLeapYear(){
+    //     const currentYear = parseInt(prompt("Введите год", "2000"));
 
-        if(currentYear%400 == 0 || (currentYear%4 == 0 && currentYear%100 != 0)){
-            alert(`Введенный год - ${currentYear} является высокосным`);
+    //     if(currentYear%400 == 0 || (currentYear%4 == 0 && currentYear%100 != 0)){
+    //         alert(`Введенный год - ${currentYear} является высокосным`);
+    //         return true;
+    //     }
+    //     else {
+    //         alert(`Введенный год - ${currentYear} не является высокосным`);
+    //         return false;
+    //     }
+    // }
+    // isLeapYear();
+
+// 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
+
+    function isNumberPolyndrom(){
+        const number = prompt("Введите пятизначное число", "12345");
+        
+        if(parseInt(number)<=9999 || parseInt(number)>99999){
+            alert("Повторите еще раз. Введите 5-ти значное число");
+            return false;
+        }
+        
+        let array = number.split("");
+        let arrayReverse = array;
+        arrayReverse = arrayReverse.reverse();
+        const numberReverse = arrayReverse.join("");
+
+        if(number==numberReverse){
+            alert(`Число ${number} является полиморфным. Проверка: ${number} равно ${numberReverse}`);
             return true;
         }
-        else {
-            alert(`Введенный год - ${currentYear} не является высокосным`);
+        else{
+            alert(`Число ${number} не является полиморфным. Проверка: ${number} не равно ${numberReverse}`);
             return false;
         }
     }
-    isLeapYear();
-
-// 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
-
+    isNumberPolyndrom();
 
 // 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
