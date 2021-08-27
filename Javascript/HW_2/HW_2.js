@@ -203,46 +203,71 @@
     // currencyConverter();
 
 // 7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%. 
-    const discount3persent = 0.03;
-    const discount5persent = 0.05;
-    const discount7persent = 0.07;
+    // const discount3persent = 0.03;
+    // const discount5persent = 0.05;
+    // const discount7persent = 0.07;
     
-    function calcSummaToBuyWithDiscount(){
-        let summaBuy = prompt("Введите сумму вашей покупки", "100");
+    // function calcSummaToBuyWithDiscount(){
+    //     let summaBuy = prompt("Введите сумму вашей покупки", "100");
 
-        if(isNaN(summaBuy)){
+    //     if(isNaN(summaBuy)){
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }
+
+    //     summaBuy = parseInt(summaBuy);
+    //     if(summaBuy>=200 && summaBuy<300){
+    //         let allSummaToBuy = summaBuy * (1 - discount3persent);
+    //         alert(`С учетом скидки ${(discount3persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+    //         return true;
+    //     }
+    //     else if(summaBuy>=300 && summaBuy<500){
+    //         let allSummaToBuy = summaBuy * (1 - discount5persent);
+    //         alert(`С учетом скидки ${(discount5persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+    //         return true;
+    //     }
+    //     else if(summaBuy>=500){
+    //         let allSummaToBuy = summaBuy * (1 - discount7persent);
+    //         alert(`С учетом скидки ${(discount7persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+    //         return true;
+    //     }
+    //     else{
+    //         let allSummaToBuy = summaBuy;
+    //         alert(`У вас нет скидок. Вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+    //         return true;
+    //     }
+    // }
+    // calcSummaToBuyWithDiscount();
+
+// 8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. 
+
+    const PI = 3.141592;
+    
+    function isCircleInSquare(){
+        let circumference = parseFloat(prompt("Введите длину окружности", "0"));
+        if(isNaN(circumference)){
             alert("Вы ввели не число. Повторите еще раз")
             return false;
         }
+        let perimeterSquare = parseFloat(prompt("Введите периметр квадрата", "0"));
+        if(isNaN(perimeterSquare)){
+            alert("Вы ввели не число. Повторите еще раз")
+            return false;
+        }
+        
+        let diameter = circumference/PI;
+        let squareLenght = perimeterSquare/4;
 
-        summaBuy = parseInt(summaBuy);
-        if(summaBuy>=200 && summaBuy<300){
-            let allSummaToBuy = summaBuy * (1 - discount3persent);
-            alert(`С учетом скидки ${(discount3persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-            return true;
-        }
-        else if(summaBuy>=300 && summaBuy<500){
-            let allSummaToBuy = summaBuy * (1 - discount5persent);
-            alert(`С учетом скидки ${(discount5persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-            return true;
-        }
-        else if(summaBuy>=500){
-            let allSummaToBuy = summaBuy * (1 - discount7persent);
-            alert(`С учетом скидки ${(discount7persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-            return true;
+        if(squareLenght >= diameter){
+            alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
         }
         else{
-            let allSummaToBuy = summaBuy;
-            alert(`У вас нет скидок. Вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-            return true;
+            alert(`В квадрат со стороной ${squareLenght.toFixed(2)} (периметр - ${perimeterSquare}) нельзя вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
         }
     }
-    calcSummaToBuyWithDiscount();
+    isCircleInSquare();
 
-// 8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. 
-
-
-// 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
+// 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 
 
 
