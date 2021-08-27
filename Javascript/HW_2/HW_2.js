@@ -241,22 +241,22 @@
 
 // 8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. 
 
-    const PI = 3.141592;
+    // const PI = 3.141592;
     
     function isCircleInSquare(){
-        let circumference = parseFloat(prompt("Введите длину окружности", "0"));
+        let circumference = prompt("Введите длину окружности", "0");
         if(isNaN(circumference)){
             alert("Вы ввели не число. Повторите еще раз")
             return false;
         }
-        let perimeterSquare = parseFloat(prompt("Введите периметр квадрата", "0"));
+        let perimeterSquare = prompt("Введите периметр квадрата", "0");
         if(isNaN(perimeterSquare)){
             alert("Вы ввели не число. Повторите еще раз")
             return false;
         }
         
-        let diameter = circumference/PI;
-        let squareLenght = perimeterSquare/4;
+        let diameter = parseFloat(circumference/Math.PI);
+        let squareLenght = parseFloat(perimeterSquare/4);
 
         if(squareLenght >= diameter){
             alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
