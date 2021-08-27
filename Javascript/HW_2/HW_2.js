@@ -4,8 +4,13 @@
 // 1. Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
 
 // function userAge(){
-//     let age = parseInt(prompt("Укажите свой возраст", "18"));
-//     if(age>0 && age<=2) {
+//     let age = prompt("Укажите свой возраст", "18");
+
+//     if(isNaN(age)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+//     if(age>=0 && age<=2) {
 //         alert("Вы младенец");
 //     }
 //     else if(age>2 && age<=12) {
@@ -23,51 +28,66 @@
 //     else if(age>=100) {
 //         alert("Поздравляем! Вы долгожитель!)))");
 //     }
-//     else alert("Вы не ввели число");
+//     else {
+//         alert("Ошибка ввода. Возможно, вы ввели отрицательное число");
+//         return false;
+//     }
+//     return true;
 // }
 // userAge();
 
 // 2. Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 
     // function numberToSybol(){
-    //     let number = parseInt(prompt("Введите число от 0 до 9", "0"));
-    //     if(number<0 || number>9) {
-    //         alert(`Вы ввели число ${number}, которое не входит в интервал от 0 до 9. Повторите еще раз`);
+    //     let number = prompt("Введите число от 0 до 9", "0");
+
+    //     if(isNaN(number)){
+    //         alert("Вы ввели не число. Повторите еще раз")
     //         return false;
     //     }
+    //     if(number.length != 1) {
+    //         alert("Повторите еще раз. Введите одно число в интервале от 0 до 9");
+    //         return false;
+    //     }
+    //     number = parseInt(number);
+        
     //     switch(number){
     //         case 0: alert("Числу '0' соответствует символ ')'");
-    //         return;
+    //         return true;
     //         case 1: alert("Числу '1' соответствует символ '!'");
-    //         return;
+    //         return true;
     //         case 2: alert("Числу '2' соответствует символ '@'");
     //         return;
     //         case 3: alert("Числу '3' соответствует символ '#'");
-    //         return;
+    //         return true;
     //         case 4: alert("Числу '4' соответствует символ '$'");
-    //         return;
+    //         return true;
     //         case 5: alert("Числу '5' соответствует символ '%'");
-    //         return;
+    //         return true;
     //         case 6: alert("Числу '6' соответствует символ '^'");
-    //         return;
+    //         return true;
     //         case 7: alert("Числу '7' соответствует символ '&'");
-    //         return;
+    //         return true;
     //         case 8: alert("Числу '8' соответствует символ '*'");
-    //         return;
+    //         return true;
     //         case 9: alert("Числу '9' соответствует символ '('");
-    //         return;
+    //         return true;
     //         default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
-    //         return;
+    //         return true;
     //     }
-    //     return true;
     // }
     // numberToSybol();
 
 // 3. Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
 
     // function numberCheck(){
-    //     const number = parseInt(prompt("Введите 3-х значное число", "111"));
-    //     if(number < 100 || number > 999) {
+    //     const number = prompt("Введите 3-х значное число", "111");
+        
+    //     if(isNaN(number)){
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }
+    //     if(number.length != 3) {
     //         alert("Повторите еще раз. Введите 3-х значное число");
     //         return false;
     //     }
@@ -107,32 +127,32 @@
 
 // 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 
-    function isNumberPolyndrom(){
-        const number = prompt("Введите пятизначное число", "12345");
+    // function isNumberPolyndrom(){
+    //     const number = prompt("Введите пятизначное число", "12345");
         
-        if(isNaN(number)) {
-            alert("Вы ввели не число. Повторите еще раз")
-            return false;
-        }         
-        if(number.length != 5){
-            alert("Повторите еще раз. Введите 5-ти значное число");
-            return false;
-        }
-        let array = number.split("");
-        let arrayReverse = array;
-        arrayReverse = arrayReverse.reverse();
-        const numberReverse = arrayReverse.join("");
+    //     if(isNaN(number)) {
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }         
+    //     if(number.length != 5){
+    //         alert("Повторите еще раз. Введите 5-ти значное число");
+    //         return false;
+    //     }
+    //     let array = number.split("");
+    //     let arrayReverse = array;
+    //     arrayReverse = arrayReverse.reverse();
+    //     const numberReverse = arrayReverse.join("");
 
-        if(number==numberReverse){
-            alert(`Число ${number} является полиморфным. Проверка: ${number} равно ${numberReverse}`);
-            return true;
-        }
-        else{
-            alert(`Число ${number} не является полиморфным. Проверка: ${number} не равно ${numberReverse}`);
-            return false;
-        }
-    }
-    isNumberPolyndrom();
+    //     if(number==numberReverse){
+    //         alert(`Число ${number} является полиморфным. Проверка: ${number} равно ${numberReverse}`);
+    //         return true;
+    //     }
+    //     else{
+    //         alert(`Число ${number} не является полиморфным. Проверка: ${number} не равно ${numberReverse}`);
+    //         return false;
+    //     }
+    // }
+    // isNumberPolyndrom();
 
 // 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
