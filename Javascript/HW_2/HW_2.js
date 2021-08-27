@@ -243,32 +243,59 @@
 
     // const PI = 3.141592;
     
-    function isCircleInSquare(){
-        let circumference = prompt("Введите длину окружности", "0");
-        if(isNaN(circumference)){
-            alert("Вы ввели не число. Повторите еще раз")
-            return false;
-        }
-        let perimeterSquare = prompt("Введите периметр квадрата", "0");
-        if(isNaN(perimeterSquare)){
-            alert("Вы ввели не число. Повторите еще раз")
-            return false;
-        }
+    // function isCircleInSquare(){
+    //     let circumference = prompt("Введите длину окружности", "0");
+    //     if(isNaN(circumference)){
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }
+    //     let perimeterSquare = prompt("Введите периметр квадрата", "0");
+    //     if(isNaN(perimeterSquare)){
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }
         
-        let diameter = parseFloat(circumference/Math.PI);
-        let squareLenght = parseFloat(perimeterSquare/4);
+    //     let diameter = parseFloat(circumference/Math.PI);
+    //     let squareLenght = parseFloat(perimeterSquare/4);
 
-        if(squareLenght >= diameter){
-            alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
-        }
-        else{
-            alert(`В квадрат со стороной ${squareLenght.toFixed(2)} (периметр - ${perimeterSquare}) нельзя вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
-        }
-    }
-    isCircleInSquare();
+    //     if(squareLenght >= diameter){
+    //         alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
+    //     }
+    //     else{
+    //         alert(`В квадрат со стороной ${squareLenght.toFixed(2)} (периметр - ${perimeterSquare}) нельзя вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
+    //     }
+    // }
+    // isCircleInSquare();
 
 // 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 
+    function victirina(){
+        let arr = [0, 0, 0];
+        
+        let summaOfPoints = 0;
+        let option1 = prompt("Вопрос 1:\n Какая самая высока гора в мире ?\n Варианты ответа:\n 1 - Говерла\n 2 - Джомолунгма\n 3 - Килиманджаро", "0");
+        
 
+        let option2 = prompt("Вопрос 2:\n Какая самая длинная река в мире ?\n Варианты ответа:\n 1 - Хуанхе\n 2 - Днепр\n 3 - Нил", "0");
+
+
+        let option3 = prompt("Вопрос 3:\n Какое самое мелкое море в мире ?\n Варианты ответа:\n 1 - Азовское  море\n 2 - Аральское море\n 3 - Баренцово море", "0");
+
+        if(option1 == 2) {
+            arr[0] = 2; 
+            summaOfPoints+=arr[0];
+        }
+        if(option2 ==3) {
+            arr[1] = 2;
+            summaOfPoints+=arr[1];
+        }
+        if(option3 == 1) {
+            arr[2]= 2;
+            summaOfPoints+=arr[2];
+        }
+        alert(`Вы набрали ${summaOfPoints} баллов за правильные ответы`);
+        alert(`Правильные ответы:\n Вопрос 1:\n Какая самая высока гора в мире ? ?\n Джомолунгма - ${arr[0]} баллов\n Вопрос 2:\n Какая самая длинная река в мире ?\n Нил - ${arr[1]} баллов\n Вопрос 3:\n Какое самое мелкое море в мире ?\n Азовское море - ${arr[2]} баллов\n`);
+    }
+    victirina();
 
 // 10. Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
