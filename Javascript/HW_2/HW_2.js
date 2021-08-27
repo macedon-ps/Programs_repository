@@ -53,27 +53,27 @@
         
     //     switch(number){
     //         case 0: alert("Числу '0' соответствует символ ')'");
-    //         return true;
+    //         break;
     //         case 1: alert("Числу '1' соответствует символ '!'");
-    //         return true;
+    //         break;
     //         case 2: alert("Числу '2' соответствует символ '@'");
-    //         return;
+    //         break;
     //         case 3: alert("Числу '3' соответствует символ '#'");
-    //         return true;
+    //         break;
     //         case 4: alert("Числу '4' соответствует символ '$'");
-    //         return true;
+    //         break;
     //         case 5: alert("Числу '5' соответствует символ '%'");
-    //         return true;
+    //         break;
     //         case 6: alert("Числу '6' соответствует символ '^'");
-    //         return true;
+    //         break;
     //         case 7: alert("Числу '7' соответствует символ '&'");
-    //         return true;
+    //         break;
     //         case 8: alert("Числу '8' соответствует символ '*'");
-    //         return true;
+    //         break;
     //         case 9: alert("Числу '9' соответствует символ '('");
-    //         return true;
+    //         break;
     //         default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
-    //         return true;
+    //         break;
     //     }
     // }
     // numberToSybol();
@@ -156,6 +156,51 @@
 
 // 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
+    function currencyConverter(){
+        const cursDollarToEuro = 0.8454;
+        const cursDollarToGryvnia = 26.7744;
+        const cursDollarToManat = 1.6964;
+        
+        let dollars = prompt("Введите количество долларов, которые вы хотите поменять", "100");
+
+        if(isNaN(dollars)) {
+            alert("Вы ввели не число. Повторите еще раз")
+            return false;
+        }
+
+        let currency = prompt("Курс валют: \n 1 - Евро: продажа - 0.8454 \n 2 - Гривна: продажа - 26.7744 \n 3 - Манат: продажа - 1.6964 \n Введите, какую валюту вы хотите купить", "");
+        
+        switch(currency){
+            case "1":
+            case "Евро":
+            case "евро": {
+                let summaInCurrency = dollars * cursDollarToEuro;
+                alert(`Вы получите ${summaInCurrency} евро`);
+                break;
+            }
+            case "2":
+            case "Гривна":
+            case "Гривня":
+            case "гривна": 
+            case "гривня": {
+                let summaInCurrency = dollars * cursDollarToGryvnia;
+                alert(`Вы получите ${summaInCurrency} гривен`);
+                break;
+            }
+            case "3":
+            case "Манат":
+            case "манат": {
+                let summaInCurrency = dollars * cursDollarToManat;
+                alert(`Вы получите ${summaInCurrency} манат`);
+                break;
+            }
+            default: {
+                alert(`Ошибка ввода. Повторите еще раз`);
+                break;
+            }
+        }
+    }
+    currencyConverter();
 
 // 7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%. 
 
