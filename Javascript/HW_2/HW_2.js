@@ -110,11 +110,14 @@
     function isNumberPolyndrom(){
         const number = prompt("Введите пятизначное число", "12345");
         
-        if(parseInt(number)<=9999 || parseInt(number)>99999){
+        if(isNaN(number)) {
+            alert("Вы ввели не число. Повторите еще раз")
+            return false;
+        }         
+        if(number.length != 5){
             alert("Повторите еще раз. Введите 5-ти значное число");
             return false;
         }
-        
         let array = number.split("");
         let arrayReverse = array;
         arrayReverse = arrayReverse.reverse();
