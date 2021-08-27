@@ -156,55 +156,88 @@
 
 // 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
-    function currencyConverter(){
-        const cursDollarToEuro = 0.8454;
-        const cursDollarToGryvnia = 26.7744;
-        const cursDollarToManat = 1.6964;
+    // function currencyConverter(){
+    //     const cursDollarToEuro = 0.8454;
+    //     const cursDollarToGryvnia = 26.7744;
+    //     const cursDollarToManat = 1.6964;
         
-        let dollars = prompt("Введите количество долларов, которые вы хотите поменять", "100");
+    //     let dollars = prompt("Введите количество долларов, которые вы хотите поменять", "100");
 
-        if(isNaN(dollars)) {
+    //     if(isNaN(dollars)) {
+    //         alert("Вы ввели не число. Повторите еще раз")
+    //         return false;
+    //     }
+
+    //     let currency = prompt("Курс валют: \n 1 - Евро: продажа - 0.8454 \n 2 - Гривна: продажа - 26.7744 \n 3 - Манат: продажа - 1.6964 \n Введите, какую валюту вы хотите купить", "");
+        
+    //     switch(currency){
+    //         case "1":
+    //         case "Евро":
+    //         case "евро": {
+    //             let summaInCurrency = dollars * cursDollarToEuro;
+    //             alert(`Вы получите ${summaInCurrency} евро`);
+    //             break;
+    //         }
+    //         case "2":
+    //         case "Гривна":
+    //         case "Гривня":
+    //         case "гривна": 
+    //         case "гривня": {
+    //             let summaInCurrency = dollars * cursDollarToGryvnia;
+    //             alert(`Вы получите ${summaInCurrency} гривен`);
+    //             break;
+    //         }
+    //         case "3":
+    //         case "Манат":
+    //         case "манат": {
+    //             let summaInCurrency = dollars * cursDollarToManat;
+    //             alert(`Вы получите ${summaInCurrency} манат`);
+    //             break;
+    //         }
+    //         default: {
+    //             alert(`Ошибка ввода. Повторите еще раз`);
+    //             break;
+    //         }
+    //     }
+    // }
+    // currencyConverter();
+
+// 7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%. 
+    const discount3persent = 0.03;
+    const discount5persent = 0.05;
+    const discount7persent = 0.07;
+    
+    function calcSummaToBuyWithDiscount(){
+        let summaBuy = prompt("Введите сумму вашей покупки", "100");
+
+        if(isNaN(summaBuy)){
             alert("Вы ввели не число. Повторите еще раз")
             return false;
         }
 
-        let currency = prompt("Курс валют: \n 1 - Евро: продажа - 0.8454 \n 2 - Гривна: продажа - 26.7744 \n 3 - Манат: продажа - 1.6964 \n Введите, какую валюту вы хотите купить", "");
-        
-        switch(currency){
-            case "1":
-            case "Евро":
-            case "евро": {
-                let summaInCurrency = dollars * cursDollarToEuro;
-                alert(`Вы получите ${summaInCurrency} евро`);
-                break;
-            }
-            case "2":
-            case "Гривна":
-            case "Гривня":
-            case "гривна": 
-            case "гривня": {
-                let summaInCurrency = dollars * cursDollarToGryvnia;
-                alert(`Вы получите ${summaInCurrency} гривен`);
-                break;
-            }
-            case "3":
-            case "Манат":
-            case "манат": {
-                let summaInCurrency = dollars * cursDollarToManat;
-                alert(`Вы получите ${summaInCurrency} манат`);
-                break;
-            }
-            default: {
-                alert(`Ошибка ввода. Повторите еще раз`);
-                break;
-            }
+        summaBuy = parseInt(summaBuy);
+        if(summaBuy>=200 && summaBuy<300){
+            let allSummaToBuy = summaBuy * (1 - discount3persent);
+            alert(`С учетом скидки ${(discount3persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+            return true;
+        }
+        else if(summaBuy>=300 && summaBuy<500){
+            let allSummaToBuy = summaBuy * (1 - discount5persent);
+            alert(`С учетом скидки ${(discount5persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+            return true;
+        }
+        else if(summaBuy>=500){
+            let allSummaToBuy = summaBuy * (1 - discount7persent);
+            alert(`С учетом скидки ${(discount7persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+            return true;
+        }
+        else{
+            let allSummaToBuy = summaBuy;
+            alert(`У вас нет скидок. Вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+            return true;
         }
     }
-    currencyConverter();
-
-// 7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%. 
-
-
+    calcSummaToBuyWithDiscount();
 
 // 8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. 
 
