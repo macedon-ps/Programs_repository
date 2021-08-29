@@ -38,264 +38,420 @@
 
 // 2. Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 
-    // function numberToSybol(){
-    //     let number = prompt("Введите число от 0 до 9", "0");
+// function numberToSybol(){
+//     let number = prompt("Введите число от 0 до 9", "0");
 
-    //     if(isNaN(number)){
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
-    //     if(number.length != 1) {
-    //         alert("Повторите еще раз. Введите одно число в интервале от 0 до 9");
-    //         return false;
-    //     }
-    //     number = parseInt(number);
-        
-    //     switch(number){
-    //         case 0: alert("Числу '0' соответствует символ ')'");
-    //         break;
-    //         case 1: alert("Числу '1' соответствует символ '!'");
-    //         break;
-    //         case 2: alert("Числу '2' соответствует символ '@'");
-    //         break;
-    //         case 3: alert("Числу '3' соответствует символ '#'");
-    //         break;
-    //         case 4: alert("Числу '4' соответствует символ '$'");
-    //         break;
-    //         case 5: alert("Числу '5' соответствует символ '%'");
-    //         break;
-    //         case 6: alert("Числу '6' соответствует символ '^'");
-    //         break;
-    //         case 7: alert("Числу '7' соответствует символ '&'");
-    //         break;
-    //         case 8: alert("Числу '8' соответствует символ '*'");
-    //         break;
-    //         case 9: alert("Числу '9' соответствует символ '('");
-    //         break;
-    //         default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
-    //         break;
-    //     }
-    // }
-    // numberToSybol();
+//     if(isNaN(number)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+//     if(number.length != 1) {
+//         alert("Повторите еще раз. Введите одно число в интервале от 0 до 9");
+//         return false;
+//     }
+//     number = parseInt(number);
+
+//     switch(number){
+//         case 0: alert("Числу '0' соответствует символ ')'");
+//         break;
+//         case 1: alert("Числу '1' соответствует символ '!'");
+//         break;
+//         case 2: alert("Числу '2' соответствует символ '@'");
+//         break;
+//         case 3: alert("Числу '3' соответствует символ '#'");
+//         break;
+//         case 4: alert("Числу '4' соответствует символ '$'");
+//         break;
+//         case 5: alert("Числу '5' соответствует символ '%'");
+//         break;
+//         case 6: alert("Числу '6' соответствует символ '^'");
+//         break;
+//         case 7: alert("Числу '7' соответствует символ '&'");
+//         break;
+//         case 8: alert("Числу '8' соответствует символ '*'");
+//         break;
+//         case 9: alert("Числу '9' соответствует символ '('");
+//         break;
+//         default: alert("Попробуйте еще. Введите число из интервала от '0' до '9'");
+//         break;
+//     }
+// }
+// numberToSybol();
 
 // 3. Запросить у пользователя трехзначное и число и проверить, есть ли в нем одинаковые цифры.
 
-    // function numberCheck(){
-    //     const number = prompt("Введите 3-х значное число", "111");
-        
-    //     if(isNaN(number)){
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
-    //     if(number.length != 3) {
-    //         alert("Повторите еще раз. Введите 3-х значное число");
-    //         return false;
-    //     }
-    //     const number1 = parseInt(number%10);
-    //     const param1 = parseInt(number/10);
-    //     const number2 = parseInt(param1%10);
-    //     const param2 = parseInt(param1/10);
-    //     const number3 = param2;
+// function numberCheck(){
+//     const number = prompt("Введите 3-х значное число", "111");
 
-    //     alert(`number = ${number3}${number2}${number1}`);
-                
-    //     if(number1==number2 || number2==number3 || number1==number3){
-    //         alert(`Во введенном числе ${number} есть одинаковые цифры`);
-    //     }
-    //     else {
-    //         alert(`Во введенном числе ${number} все три цифры разные`);
-    //     }
-    //     return true;
-    // }
-    // numberCheck();
+//     if(isNaN(number)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+//     if(number.length != 3) {
+//         alert("Повторите еще раз. Введите 3-х значное число");
+//         return false;
+//     }
+//     const number1 = parseInt(number%10);
+//     const param1 = parseInt(number/10);
+//     const number2 = parseInt(param1%10);
+//     const param2 = parseInt(param1/10);
+//     const number3 = param2;
+
+//     alert(`number = ${number3}${number2}${number1}`);
+
+//     if(number1==number2 || number2==number3 || number1==number3){
+//         alert(`Во введенном числе ${number} есть одинаковые цифры`);
+//     }
+//     else {
+//         alert(`Во введенном числе ${number} все три цифры разные`);
+//     }
+//     return true;
+// }
+// numberCheck();
 
 // 4. Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
-    // function isLeapYear(){
-    //     const currentYear = parseInt(prompt("Введите год", "2000"));
+// function isLeapYear(){
+//     const currentYear = parseInt(prompt("Введите год", "2000"));
 
-    //     if(currentYear%400 == 0 || (currentYear%4 == 0 && currentYear%100 != 0)){
-    //         alert(`Введенный год - ${currentYear} является высокосным`);
-    //         return true;
-    //     }
-    //     else {
-    //         alert(`Введенный год - ${currentYear} не является высокосным`);
-    //         return false;
-    //     }
-    // }
-    // isLeapYear();
+//     if(currentYear%400 == 0 || (currentYear%4 == 0 && currentYear%100 != 0)){
+//         alert(`Введенный год - ${currentYear} является высокосным`);
+//         return true;
+//     }
+//     else {
+//         alert(`Введенный год - ${currentYear} не является высокосным`);
+//         return false;
+//     }
+// }
+// isLeapYear();
 
 // 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 
-    // function isNumberPolyndrom(){
-    //     const number = prompt("Введите пятизначное число", "12345");
-        
-    //     if(isNaN(number)) {
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }         
-    //     if(number.length != 5){
-    //         alert("Повторите еще раз. Введите 5-ти значное число");
-    //         return false;
-    //     }
-    //     let array = number.split("");
-    //     let arrayReverse = array;
-    //     arrayReverse = arrayReverse.reverse();
-    //     const numberReverse = arrayReverse.join("");
+// function isNumberPolyndrom(){
+//     const number = prompt("Введите пятизначное число", "12345");
 
-    //     if(number==numberReverse){
-    //         alert(`Число ${number} является полиморфным. Проверка: ${number} равно ${numberReverse}`);
-    //         return true;
-    //     }
-    //     else{
-    //         alert(`Число ${number} не является полиморфным. Проверка: ${number} не равно ${numberReverse}`);
-    //         return false;
-    //     }
-    // }
-    // isNumberPolyndrom();
+//     if(isNaN(number)) {
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }         
+//     if(number.length != 5){
+//         alert("Повторите еще раз. Введите 5-ти значное число");
+//         return false;
+//     }
+//     let array = number.split("");
+//     let arrayReverse = array;
+//     arrayReverse = arrayReverse.reverse();
+//     const numberReverse = arrayReverse.join("");
+
+//     if(number==numberReverse){
+//         alert(`Число ${number} является полиморфным. Проверка: ${number} равно ${numberReverse}`);
+//         return true;
+//     }
+//     else{
+//         alert(`Число ${number} не является полиморфным. Проверка: ${number} не равно ${numberReverse}`);
+//         return false;
+//     }
+// }
+// isNumberPolyndrom();
 
 // 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести: EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
-    // function currencyConverter(){
-    //     const cursDollarToEuro = 0.8454;
-    //     const cursDollarToGryvnia = 26.7744;
-    //     const cursDollarToManat = 1.6964;
-        
-    //     let dollars = prompt("Введите количество долларов, которые вы хотите поменять", "100");
+// function currencyConverter(){
+//     const cursDollarToEuro = 0.8454;
+//     const cursDollarToGryvnia = 26.7744;
+//     const cursDollarToManat = 1.6964;
 
-    //     if(isNaN(dollars)) {
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
+//     let dollars = prompt("Введите количество долларов, которые вы хотите поменять", "100");
 
-    //     let currency = prompt("Курс валют: \n 1 - Евро: продажа - 0.8454 \n 2 - Гривна: продажа - 26.7744 \n 3 - Манат: продажа - 1.6964 \n Введите, какую валюту вы хотите купить", "");
-        
-    //     switch(currency){
-    //         case "1":
-    //         case "Евро":
-    //         case "евро": {
-    //             let summaInCurrency = dollars * cursDollarToEuro;
-    //             alert(`Вы получите ${summaInCurrency} евро`);
-    //             break;
-    //         }
-    //         case "2":
-    //         case "Гривна":
-    //         case "Гривня":
-    //         case "гривна": 
-    //         case "гривня": {
-    //             let summaInCurrency = dollars * cursDollarToGryvnia;
-    //             alert(`Вы получите ${summaInCurrency} гривен`);
-    //             break;
-    //         }
-    //         case "3":
-    //         case "Манат":
-    //         case "манат": {
-    //             let summaInCurrency = dollars * cursDollarToManat;
-    //             alert(`Вы получите ${summaInCurrency} манат`);
-    //             break;
-    //         }
-    //         default: {
-    //             alert(`Ошибка ввода. Повторите еще раз`);
-    //             break;
-    //         }
-    //     }
-    // }
-    // currencyConverter();
+//     if(isNaN(dollars)) {
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+
+//     let currency = prompt("Курс валют: \n 1 - Евро: продажа - 0.8454 \n 2 - Гривна: продажа - 26.7744 \n 3 - Манат: продажа - 1.6964 \n Введите, какую валюту вы хотите купить", "");
+
+//     switch(currency){
+//         case "1":
+//         case "Евро":
+//         case "евро": {
+//             let summaInCurrency = dollars * cursDollarToEuro;
+//             alert(`Вы получите ${summaInCurrency} евро`);
+//             break;
+//         }
+//         case "2":
+//         case "Гривна":
+//         case "Гривня":
+//         case "гривна": 
+//         case "гривня": {
+//             let summaInCurrency = dollars * cursDollarToGryvnia;
+//             alert(`Вы получите ${summaInCurrency} гривен`);
+//             break;
+//         }
+//         case "3":
+//         case "Манат":
+//         case "манат": {
+//             let summaInCurrency = dollars * cursDollarToManat;
+//             alert(`Вы получите ${summaInCurrency} манат`);
+//             break;
+//         }
+//         default: {
+//             alert(`Ошибка ввода. Повторите еще раз`);
+//             break;
+//         }
+//     }
+// }
+// currencyConverter();
 
 // 7. Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%. 
-    // const discount3persent = 0.03;
-    // const discount5persent = 0.05;
-    // const discount7persent = 0.07;
-    
-    // function calcSummaToBuyWithDiscount(){
-    //     let summaBuy = prompt("Введите сумму вашей покупки", "100");
+// const discount3persent = 0.03;
+// const discount5persent = 0.05;
+// const discount7persent = 0.07;
 
-    //     if(isNaN(summaBuy)){
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
+// function calcSummaToBuyWithDiscount(){
+//     let summaBuy = prompt("Введите сумму вашей покупки", "100");
 
-    //     summaBuy = parseInt(summaBuy);
-    //     if(summaBuy>=200 && summaBuy<300){
-    //         let allSummaToBuy = summaBuy * (1 - discount3persent);
-    //         alert(`С учетом скидки ${(discount3persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-    //         return true;
-    //     }
-    //     else if(summaBuy>=300 && summaBuy<500){
-    //         let allSummaToBuy = summaBuy * (1 - discount5persent);
-    //         alert(`С учетом скидки ${(discount5persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-    //         return true;
-    //     }
-    //     else if(summaBuy>=500){
-    //         let allSummaToBuy = summaBuy * (1 - discount7persent);
-    //         alert(`С учетом скидки ${(discount7persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-    //         return true;
-    //     }
-    //     else{
-    //         let allSummaToBuy = summaBuy;
-    //         alert(`У вас нет скидок. Вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
-    //         return true;
-    //     }
-    // }
-    // calcSummaToBuyWithDiscount();
+//     if(isNaN(summaBuy)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+
+//     summaBuy = parseInt(summaBuy);
+//     if(summaBuy>=200 && summaBuy<300){
+//         let allSummaToBuy = summaBuy * (1 - discount3persent);
+//         alert(`С учетом скидки ${(discount3persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+//         return true;
+//     }
+//     else if(summaBuy>=300 && summaBuy<500){
+//         let allSummaToBuy = summaBuy * (1 - discount5persent);
+//         alert(`С учетом скидки ${(discount5persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+//         return true;
+//     }
+//     else if(summaBuy>=500){
+//         let allSummaToBuy = summaBuy * (1 - discount7persent);
+//         alert(`С учетом скидки ${(discount7persent*100).toFixed(2)}% вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+//         return true;
+//     }
+//     else{
+//         let allSummaToBuy = summaBuy;
+//         alert(`У вас нет скидок. Вам нужно заплатить ${allSummaToBuy.toFixed(2)} гривен`);
+//         return true;
+//     }
+// }
+// calcSummaToBuyWithDiscount();
 
 // 8. Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат. 
 
-    // const PI = 3.141592;
-    
-    // function isCircleInSquare(){
-    //     let circumference = prompt("Введите длину окружности", "0");
-    //     if(isNaN(circumference)){
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
-    //     let perimeterSquare = prompt("Введите периметр квадрата", "0");
-    //     if(isNaN(perimeterSquare)){
-    //         alert("Вы ввели не число. Повторите еще раз")
-    //         return false;
-    //     }
-        
-    //     let diameter = parseFloat(circumference/Math.PI);
-    //     let squareLenght = parseFloat(perimeterSquare/4);
+// const PI = 3.141592;
 
-    //     if(squareLenght >= diameter){
-    //         alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
-    //     }
-    //     else{
-    //         alert(`В квадрат со стороной ${squareLenght.toFixed(2)} (периметр - ${perimeterSquare}) нельзя вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
-    //     }
-    // }
-    // isCircleInSquare();
+// function isCircleInSquare(){
+//     let circumference = prompt("Введите длину окружности", "0");
+//     if(isNaN(circumference)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+//     let perimeterSquare = prompt("Введите периметр квадрата", "0");
+//     if(isNaN(perimeterSquare)){
+//         alert("Вы ввели не число. Повторите еще раз")
+//         return false;
+//     }
+
+//     let diameter = parseFloat(circumference/Math.PI);
+//     let squareLenght = parseFloat(perimeterSquare/4);
+
+//     if(squareLenght >= diameter){
+//         alert(`В квадрат со стороной ${squareLenght.toFixed(2)}(периметр - ${perimeterSquare}) можно вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
+//     }
+//     else{
+//         alert(`В квадрат со стороной ${squareLenght.toFixed(2)} (периметр - ${perimeterSquare}) нельзя вписать окружность диаметром ${diameter.toFixed(2)} (длина окружности - ${circumference})`);
+//     }
+// }
+// isCircleInSquare();
 
 // 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 
-    function victirina(){
-        let arr = [0, 0, 0];
-        
-        let summaOfPoints = 0;
-        let option1 = prompt("Вопрос 1:\n Какая самая высока гора в мире ?\n Варианты ответа:\n 1 - Говерла\n 2 - Джомолунгма\n 3 - Килиманджаро", "0");
-        
+// function victirina(){
+//     let arr = [0, 0, 0];
 
-        let option2 = prompt("Вопрос 2:\n Какая самая длинная река в мире ?\n Варианты ответа:\n 1 - Хуанхе\n 2 - Днепр\n 3 - Нил", "0");
+//     let summaOfPoints = 0;
+//     let option1 = prompt("Вопрос 1:\n Какая самая высока гора в мире ?\n Варианты ответа:\n 1 - Говерла\n 2 - Джомолунгма\n 3 - Килиманджаро", "0");
 
 
-        let option3 = prompt("Вопрос 3:\n Какое самое мелкое море в мире ?\n Варианты ответа:\n 1 - Азовское  море\n 2 - Аральское море\n 3 - Баренцово море", "0");
+//     let option2 = prompt("Вопрос 2:\n Какая самая длинная река в мире ?\n Варианты ответа:\n 1 - Хуанхе\n 2 - Днепр\n 3 - Нил", "0");
 
-        if(option1 == 2) {
-            arr[0] = 2; 
-            summaOfPoints+=arr[0];
-        }
-        if(option2 ==3) {
-            arr[1] = 2;
-            summaOfPoints+=arr[1];
-        }
-        if(option3 == 1) {
-            arr[2]= 2;
-            summaOfPoints+=arr[2];
-        }
-        alert(`Вы набрали ${summaOfPoints} баллов за правильные ответы`);
-        alert(`Правильные ответы:\n Вопрос 1:\n Какая самая высока гора в мире ? ?\n Джомолунгма - ${arr[0]} баллов\n Вопрос 2:\n Какая самая длинная река в мире ?\n Нил - ${arr[1]} баллов\n Вопрос 3:\n Какое самое мелкое море в мире ?\n Азовское море - ${arr[2]} баллов\n`);
-    }
-    victirina();
+
+//     let option3 = prompt("Вопрос 3:\n Какое самое мелкое море в мире ?\n Варианты ответа:\n 1 - Азовское  море\n 2 - Аральское море\n 3 - Баренцово море", "0");
+
+//     if(option1 == 2) {
+//         arr[0] = 2; 
+//         summaOfPoints+=arr[0];
+//     }
+//     if(option2 ==3) {
+//         arr[1] = 2;
+//         summaOfPoints+=arr[1];
+//     }
+//     if(option3 == 1) {
+//         arr[2]= 2;
+//         summaOfPoints+=arr[2];
+//     }
+//     alert(`Вы набрали ${summaOfPoints} баллов за правильные ответы`);
+//     alert(`Правильные ответы:\n Вопрос 1:\n Какая самая высока гора в мире ? ?\n Джомолунгма - ${arr[0]} баллов\n Вопрос 2:\n Какая самая длинная река в мире ?\n Нил - ${arr[1]} баллов\n Вопрос 3:\n Какое самое мелкое море в мире ?\n Азовское море - ${arr[2]} баллов\n`);
+// }
+// victirina();
 
 // 10. Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
+
+const daysOnMonths = {
+    jan: 31,
+    feb: 28,
+    mar: 31,
+    apr: 30,
+    may: 31,
+    jun: 30,
+    jul: 31,
+    aug: 31,
+    sep: 30,
+    oct: 31,
+    nov: 30,
+    dec: 31
+};
+
+let currentDay = 0;
+let currentMonth = 0;
+let currentYear = 0;
+let nextDayFromCurrent = 0;
+let nextMonthFromCurrent = 0;
+let nextYearFromCurrent = 0;
+let maxDayInMonth = 0;
+let isLeapYear = false;
+
+function whatDayNext() {
+
+    // 1. Ввод и проверка данных
+    // 1.1.1. Ввести день
+    let currentDayStr = prompt("Введите день месяца (от 1 до 31)", "1");
+
+    // 1.1.2. Проверка корректности ввода дня
+    if (isNaN(currentDayStr)) {
+        alert("Вы ввели не число. Повторите еще раз")
+        return false;
+    }
+    if (currentDayStr < 1 || currentDayStr > 31) {
+        alert("Вы ввели некорректное число для дня. Повторите еще раз")
+        return false;
+    }
+    let currentDay = parseInt(currentDayStr);
+
+    
+    // 1.2.1. Ввести месяц
+    let currentMonthStr = prompt("Введите номер месяца (от 1 до 12)", "1");
+
+    // 1.2.2. Проверка корректности ввода месяца 
+    if (isNaN(currentMonthStr)) {
+        alert("Вы ввели не число. Повторите еще раз")
+        return false;
+    }
+    if (currentMonthStr < 1 || currentMonthStr > 12) {
+        alert("Вы ввели некорректное число для месяца. Повторите еще раз")
+        return false;
+    }
+    
+    let currentMonth = parseInt(currentMonthStr);
+
+    // 1.3.1. Ввести год
+    let currentYearStr = prompt("Введите год (от 0 до 9999)", "2021");
+    
+    // 1.3.2. Проверка корректности ввода года 
+    if (isNaN(currentYearStr)) {
+        alert("Вы ввели не число. Повторите еще раз")
+        return false;
+    }
+    if(currentYearStr<0 || currentYearStr>9999){
+        alert("Вы ввели некорректное число для года. Повторите еще раз")
+        return false;
+    }
+    
+    let currentYear = parseInt(currentYearStr);
+
+       
+    // 2. Промежуточные вычисления
+    
+    // 2.1. Установка максимального числа дней в текущем месяце
+
+    switch (currentMonth) {
+        case 1:
+            maxDayInMonth = daysOnMonths.jan;
+            break;
+        case 2:
+            maxDayInMonth = daysOnMonths.feb;
+            break;
+        case 3:
+            maxDayInMonth = daysOnMonths.mar;
+            break;
+        case 4:
+            maxDayInMonth = daysOnMonths.apr;
+            break;
+        case 5:
+            maxDayInMonth = daysOnMonths.may;
+            break;
+        case 6:
+            maxDayInMonth = daysOnMonths.jun;
+            break;
+        case 7:
+            maxDayInMonth = daysOnMonths.jul;
+            break;
+        case 8:
+            maxDayInMonth = daysOnMonths.aug;
+            break;
+        case 9:
+            maxDayInMonth = daysOnMonths.sep;
+            break;
+        case 10:
+            maxDayInMonth = daysOnMonths.oct;
+            break;
+        case 11:
+            maxDayInMonth = daysOnMonths.nov;
+            break;
+        case 12:
+            maxDayInMonth = daysOnMonths.dec;
+            break;
+    }
+    
+    // 2.2. Проверка на високосный год
+    if (currentYear % 400 == 0 || (currentYear % 4 == 0 && currentYear % 100 != 0)) {
+        alert(`${currentYear} - високосный год`);
+        isLeapYear = true;
+    }
+ 
+    // 2.3. Установка 29 февраля для высокосного года, если февраль - текущий месяц и год високосный
+    if ((currentMonth == "2" || currentMonth == "февраль") && isLeapYear == true) {
+        maxDayInMonth = 29;
+    }
+
+    // 3. Основная логика
+
+    if (currentDay > maxDayInMonth) {
+        alert(`Что то пошло не так!  В данном месяце (${currentMonth}) ${currentYear} года максимум - ${maxDayInMonth} дней`)
+        return false;
+    }
+    
+    if (currentDay == maxDayInMonth) {
+        nextDayFromCurrent = 1;
+        if (currentMonth < 12) {
+            nextMonthFromCurrent = currentMonth + 1;
+            nextYearFromCurrent = currentYear;
+        }
+        if (currentMonth == 12) {
+            nextMonthFromCurrent = 1;
+            nextYearFromCurrent = currentYear + 1;
+        }
+    }
+    if (currentDay < maxDayInMonth) {
+        nextDayFromCurrent = currentDay + 1;
+        nextMonthFromCurrent = currentMonth;
+        nextYearFromCurrent = currentYear;
+    }
+
+    alert(`Вы ввели: ${currentDay}.${currentMonth}.${currentYear}\n`);
+    alert(`Следующий день: ${nextDayFromCurrent}.${nextMonthFromCurrent}.${nextYearFromCurrent}\n`);
+}
+whatDayNext();
