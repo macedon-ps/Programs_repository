@@ -21,10 +21,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="searchCountries.php">Поиск стран</a>
+                            <a class="nav-link active" href="searchCountries.php">Поиск стран</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="addCountries.php">Добавление стран</a>
@@ -35,16 +35,13 @@
         </nav>
     
         <div class="search-countries bg-light">
-            <h1 class="text-center">Справочник по странам мира</h1>
-            <h2 class="text-center">Найти страну</h2>
+            <h1 class="text-center mt-3 mb-3">Справочник по странам мира</h1>
+            <h2 class="text-center mt-3 mb-3">Найти страну</h2>
     
-            <form>
-                <label for="search">Найти страну: </label>
-                <input type="search" name="search" id="search">
-            </form>
+            
             <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Найти страну" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Поиск</button>
             </form>
         </div>
     </div>

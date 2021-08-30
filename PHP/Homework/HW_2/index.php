@@ -34,7 +34,7 @@
             </div>
         </nav>
         <div>
-            <h1 class="text-center">Справочник по странам мира</h1>
+            <h1 class="text-center mt-3 mb-3">Справочник по странам мира</h1>
         </div>
     </div>
     <?php

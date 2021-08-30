@@ -21,13 +21,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="searchCountries.php">Поиск стран</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="addCountries.php">Добавление стран</a>
+                            <a class="nav-link active" href="addCountries.php">Добавление стран</a>
                         </li>
                     </ul>
                 </div>
@@ -35,17 +35,12 @@
         </nav>
 
         <div class="add-countries bg-light">
-            <h1 class="text-center">Справочник по странам мира</h1>
-            <h2 class="text-center">Добавить страну</h2>
+            <h1 class="text-center mt-3 mb-3">Справочник по странам мира</h1>
+            <h2 class="text-center mt-3 mb-3">Добавить страну</h2>
 
-            <form class="d-flex">
-                <label for="add">Добавить страну: </label>
-                <input class="form-control me-2" type="text" name="add" id="add" placeholder="Добавить:" aria-label="Add">
-                <button class="btn btn-outline-light" type="submit">Добавить:</button>
-            </form>
-            <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+   <         <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Добавить страну" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Добавить</button>
             </form>
         </div>
     </div>
