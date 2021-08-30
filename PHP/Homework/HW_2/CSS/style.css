@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    font-size: 1.5em;
+}
+.navbar-brand{
+    font-size: 1.1em;
+}
+.main-container,
+.search-countries-container,
+.add-countries-container{
+    height: 100vh;
+}
+
