@@ -1,54 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поиск стран мира</title>
-    <?php echo '<link rel="stylesheet" href="CSS\bootstrap.min.css">' ?>
-    <?php echo '<link rel="stylesheet" href="CSS\style.css">' ?>
-</head>
+    include_once("function.php");
+    connect();
 
-<body>
-    <div class="search-countries-container mx-2">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">Страны мира</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="searchCountries.php">Поиск стран</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="addCountries.php">Добавление стран</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <div class="search-countries bg-light">
-            <h1 class="text-center mt-3 mb-3">Справочник по странам мира</h1>
-            <h2 class="text-center mt-3 mb-3">Найти страну</h2>
-    
-            
-            <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Найти страну" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Поиск</button>
-            </form>
-        </div>
-    </div>
-    
-    <?php
-        echo '<script src="JS\bootstrap.min.js"></script>'
-    ?>
-</body>
+    $err = mysqli_connect_error($result);
+    if ($err) {
+        echo 'Ошибка подключения к базе данных. Код ошибки:' . $err . '<br>';
+        exit();
+    }
 
-</html>
+    $selectAllCountries = 'select * from countries';
+    $result = mysqli_query($link, $selectAllCountries);
+
+    $err = mysqli_connect_error($result);
+    if ($err) {
+        echo 'Ошибка SQL запроса. Код ошибки:' . $err . '<br>';
+        exit();
+    }
+
+    echo '<form action="searchCountries.php" method="post">';
+    echo '<table class="table table-striped">';
+    echo '<tr>';
+    echo '<td>№ п/п</td>';
+    echo '<td>Страны:</td>';
+    echo '</tr>';
+
+    while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
+        echo '<tr>';
+        echo '<td>' . $row[0] . '</td>' . '<td>' . $row[1] . '</td>';
+        echo '</tr>';
+    }
+
+    echo '</table>';
+    echo '</form>';
+
+    echo '<form class="d-flex">';
+    // echo '<input type="submit" name="search" value="Поиск">';
+    echo '<input class="form-control me-2" type="search" name="search-country" placeholder="Найти страну" aria-label="Search">';
+    echo '<button class="btn btn-success" type="submit" name="search-button">Поиск</button>';
+    echo '</form>';
+?>
+    
