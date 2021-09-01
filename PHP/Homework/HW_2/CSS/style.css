@@ -14,4 +14,20 @@
 .add-countries-container{
     height: 100vh;
 }
-
+.code-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    position: absolute;
+    left: calc(50% - 60px);
+    bottom: 2em;
+}
+.parent{
+    position: relative;
+}
+.baby{
+    position: absolute;
+    right: 0;
+}
