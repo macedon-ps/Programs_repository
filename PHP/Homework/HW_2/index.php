@@ -62,19 +62,27 @@ include_once("function.php");
             if (isset($_GET["page"])) {
                 $page = $_GET["page"];
                 if ($page == 1) {
-                    echo '<div class="mt-3 mb-3">Грузим блок Home</div>';
+                    echo '<div class="mt-3 mb-3">Электронный справочник по странам мира</div>';
                     // include_once("index.php");
                 }
                 if ($page == 2) {
-                    echo '<div class="mt-3 mb-3">Грузим блок SearchCountries</div>';
+                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите найти в списке стран:</div>';
+                    echo '<br/>';
                     include_once("searchCountries.php");
                 }
                 if ($page == 3) {
-                    echo '<div class="mt-3 mb-3">Грузим блок AddCountries</div>';
+                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите добавить к списку стран:</div>';
+                    echo '<br/>';
                     include_once("addCountries.php");
+                        
+                        echo '<br/>';
+                        echo '<br/>';
+                        if(isset($_POST['add-button'])){
+                           writeNewCountry($_POST["add-country"]);
+                        }
                 }
                 if ($page == 4) {
-                    echo '<div class="mt-3 mb-3">Грузим блок ListCountries</div>';
+                    echo '<div class="mt-3 mb-3">Список стран из БД:</div>';
                     include_once("listCountries.php");    
                 }
             }
