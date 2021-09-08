@@ -55,7 +55,18 @@ include_once("function.php");
         </nav>
 
         <h1 class="text-center mt-3 mb-3">Страны мира</h1>
-
+        
+        
+        <?php
+            if (!isset($_GET["page"])) {
+                
+                echo '<div class="code-block mx-3 mt-5">';
+                echo '<div class="mt-3 mb-3">Электронный справочник по странам мира</div>';
+                echo '<img class="col-12 col-sm-12 col-md-8 col-lg-6" src="images/countriesMap.jpg" alt="Карта стран мира">';
+                echo '</div>';
+            }
+        ?>
+        
         <div class="code-block mx-3 mt-5">
             <?php
             global $page;
