@@ -63,6 +63,7 @@
         }
         
         echo ' Успешно записали имя страны в БД';
+        return true;
     }
 ?>
 <?php
@@ -106,26 +107,9 @@ function searchCountries($nameCountry){
             }
             $i++;  
         }    
-        // echo "По ходу, такой страны не существует в Энциклопедии стран мира";
-
         fclose($buffer);
     }  
     
-    
-
-    // <div class="container-page">
-    //     <h1>Страница всех пользователей</h1>
-    //     <table border="1">
-    //         <caption class="titleTable">Зарегистрированные пользователи: </caption>
-    //         <tr><td>Логины пользователей</td><td>Хешированные пароли пользователей</td><td>Электронные адреса пользователей</td></tr>
-
-    //     <?php
-    //         include_once("functions.php");
-    //         showUsers();
-    //     </table>
-    //  </div>   
-
-
     return true;
 }
 ?>
