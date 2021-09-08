@@ -81,6 +81,7 @@ function searchCountries($nameCountry){
         
         $buffer = fopen($pathToFile, "r");
         $i = 1; 
+        $isCountryExist = false;
 
         while($str = fgets($buffer, 100)){
             $nameFromStr = trim(substr($str, 0));
@@ -89,27 +90,28 @@ function searchCountries($nameCountry){
 
                 echo 'Такая страна существует в Энциклопедии стран мира';
                 echo '<br/>';
-
-                echo '<div class="country-name"';
-                echo '<form class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex">';
-                echo '<table class="table table-striped">';
+                echo '<div class="country-name col-10 col-sm-10 col-md-8 col-lg-6"';
+                echo '<form d-flex">';
+                echo '<table class="table table-striped mx-4">';
                 echo '<tr>';
                 echo '<td class="col-2 col-sm-2 col-md-2 col-lg-2">№ п/п</td>';
-                echo '<td class="col-10 col-sm-10 col-md-10 col-lg-10">Название страны:</td>';
+                echo '<td class="col-6 col-sm-6 col-md-10 col-lg-10">Название страны:</td>';
                 echo '</tr>';
                 echo '<tr>';
-                echo '<td class="col-2 col-sm-2 col-md-2 col-lg-2">' . $i . '  ' . '</td><td class="col-10 col-sm-10 col-md-10 col-lg-10">' . $nameFromStr . '</td>';
+                echo '<td class="col-2 col-sm-2 col-md-2 col-lg-2">' . $i . '  ' . '</td><td class="col-6 col-sm-6 col-md-10 col-lg-10">' . $nameFromStr . '</td>';
                 echo '</tr>';
                 echo '<br/>';  
                 echo '</table>';
                 echo '</form>';
                 echo '</div>';
+                $isCountryExist = true;
+                break;
             }
             $i++;  
         }    
+        if($isCountryExist == false) echo 'Такой страны не существует. Попробуйте еще';
         fclose($buffer);
     }  
-    
     return true;
 }
 ?>
