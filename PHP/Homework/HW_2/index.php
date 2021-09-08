@@ -63,10 +63,10 @@ include_once("function.php");
                 $page = $_GET["page"];
                 if ($page == 1) {
                     echo '<div class="mt-3 mb-3">Электронный справочник по странам мира</div>';
-                    // include_once("index.php");
+                    echo '<img class="col-12 col-sm-12 col-md-8 col-lg-6" src="images/countriesMap.jpg" alt="Карта стран мира">';
                 }
                 if ($page == 2) {
-                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите найти в списке стран:</div>';
+                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите найти в Энциклопедии стран мира (в текстовом файле):</div>';
                     echo '<br/>';
                     include_once("searchCountries.php");
 
@@ -77,7 +77,7 @@ include_once("function.php");
                         }
                 }
                 if ($page == 3) {
-                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите добавить к списку стран:</div>';
+                    echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите добавить к своему Списку стран мира (в БД MySQL):</div>';
                     echo '<br/>';
                     include_once("addCountries.php");
                         
@@ -88,7 +88,7 @@ include_once("function.php");
                         }
                 }
                 if ($page == 4) {
-                    echo '<div class="mt-3 mb-3">Список стран из БД:</div>';
+                    echo '<div class="mt-3 mb-3">Ваш Список стран мира (из БД MySQL):</div>';
                     include_once("listCountries.php");    
                 }
             }
