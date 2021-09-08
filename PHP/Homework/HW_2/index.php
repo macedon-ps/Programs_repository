@@ -69,6 +69,12 @@ include_once("function.php");
                     echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите найти в списке стран:</div>';
                     echo '<br/>';
                     include_once("searchCountries.php");
+
+                        echo '<br/>';
+                        echo '<br/>';
+                        if(isset($_POST['search-button'])){
+                            searchCountries($_POST['search-country']);
+                        }
                 }
                 if ($page == 3) {
                     echo '<div class="mt-3 mb-3">Введите название страны, которое вы хотите добавить к списку стран:</div>';
@@ -78,7 +84,7 @@ include_once("function.php");
                         echo '<br/>';
                         echo '<br/>';
                         if(isset($_POST['add-button'])){
-                           writeNewCountry($_POST["add-country"]);
+                            writeNewCountry($_POST["add-country"]);
                         }
                 }
                 if ($page == 4) {
