@@ -94,6 +94,7 @@ function showUsers(){
     $pathToFile = "D:\OpenServer\domains\menuUsers\users.txt";
     
     if(file_exists($pathToFile)){
+        
         $buffer = fopen($pathToFile, "r");
         while($str = fgets($buffer, 4096)){
             $nameFromStr = substr($str, 0, strpos($str, ":"));
@@ -106,6 +107,7 @@ function showUsers(){
                         
             echo"<tr><td>" . $nameFromStr . "</td><td>" . $passwordFromStr . "</td><td>" . $emailFromStr . "</td></tr>";    
         }    
+        fclose($buffer);
     }    
     return true;
 }

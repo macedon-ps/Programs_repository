@@ -31,7 +31,7 @@
             <div class="showUsers">
                 <button class="btn">
                     <?php
-                        echo'<a href="showUsers.php">Show all users</a>';
+                        echo '<a href="showUsers.php">Show all users</a>';
                     ?>
                 </button>
             </div>
