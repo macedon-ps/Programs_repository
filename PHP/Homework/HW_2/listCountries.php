@@ -18,11 +18,11 @@
         exit();
     }
     echo '<div class="height-scroll"';
-    echo '<form class="col-12 col-sm-12 col-md-6 col-lg-6 overflow-y-scroll">';
+    echo '<form class="col-10 col-sm-10 col-md-6 col-lg-6 overflow-y-scroll">';
     echo '<table class="table table-striped">';
     echo '<tr>';
-    echo '<td class="col-2 col-sm-2 col-md-2 col-lg-2">№ п/п</td>';
-    echo '<td class="col-10 col-sm-10 col-md-10 col-lg-10">Страны:</td>';
+    echo '<td class="col-2 col-sm-2 col-md-2 col-lg-2 ps-2">№ п/п</td>';
+    echo '<td class="col-6 col-sm-6 col-md-10 col-lg-10">Страны:</td>';
     echo '</tr>';
 
     $number = 1;
