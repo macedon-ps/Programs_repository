@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.header1{
+    text-align: center;
+    font-size: 2em;
+    background: rgb(248, 246, 108);
+    margin: 0;
+    padding: 1em 0;
+}
+.header3{
+    text-align: center;
+    font-size: 1.2em;
+}
+.block{
+    padding: 2em;
+}
+.block:nth-child(odd){
+    background: rgb(248, 246, 108);
+}
+.block:nth-child(even){
+    background: rgb(81, 241, 153);
+}
+text{
+    font-size: 1em;
+    font-family: sans-serif;
+}
