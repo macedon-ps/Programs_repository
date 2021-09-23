@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.App {
+  text-align: center;
+}
+.App-header {
+  background: rgb(248, 246, 108);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.header1{
+    text-align: center;
+    font-size: 1em;
+    background: rgb(116, 184, 240);
+    margin: 0;
+    padding: 0.2em 0;
+} 
+.header3{
+    text-align: center;
+    font-size: 1.2em;
+    background: rgb(116, 184, 240);
+    padding: 0.1em 0;
+}
+.bandName{
+  font-weight: bold;
+  font-size: 1.3em;
+  color: blue;
+}
+text{
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.imageBlock,
+.memberBlock{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+.imageBlock:nth-child(odd),
+.memberBlock:nth-child(odd){
+  background: rgb(241, 239, 239);
+}
+.imageBlock:nth-child(even),
+.memberBlock:nth-child(even){
+  background: rgb(206, 231, 243);
+}
+.block1,
+.block2,
+.block3{
+  width: 300px;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+}
+.block1 img{
+  width: 75%;
+}
+/* .black2,
+.black3{
+  margin-top: 1em;
+} */
