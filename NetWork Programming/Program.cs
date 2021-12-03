@@ -21,29 +21,63 @@ namespace ClientServereNetworking
 		static void Main(string[] args)
 		{
 			// 1. Создание сокета клиента
-			
-			Console.WriteLine("Создадим сокет клиента");
 
-			IPAddress ip = IPAddress.Parse("207.46.197.32");
-			IPEndPoint endPoint = new IPEndPoint(ip, 80);
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("Создадим сокет клиента");
+			Console.WriteLine();
+			Console.ResetColor();
+
+			IPAddress ip = IPAddress.Parse("77.222.61.70");                                     // создаем переменную ip для конечной точки (сервера)
+			Console.WriteLine("IP = " + ip);
+			
+			IPEndPoint endPoint = new IPEndPoint(ip, 80);                                       // создаем переменную endPoint с указанием IP адреса и порта 80
+			Console.WriteLine("endPoint = " + endPoint);
+			Console.WriteLine();   
+																								// создаем сокет клиента для соединения с конечной точкой (сервером)
 			Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("Создан сокет");
+			Console.ResetColor();
+			Console.WriteLine("socket = " + socket);
+			Console.WriteLine();
+
 			try
 			{
-				socket.Connect(endPoint);
-				if (socket.Connected)
+				socket.Connect(endPoint);														// метод соединения с конечной точкой (сервером)
+				if (socket.Connected)                                                           // проверка, что соединение есть
 				{
-					String strSend = "GET\r\n\r\n";
-					socket.Send(System.Text.Encoding.ASCII.
-					GetBytes(strSend));
-					byte[] buffer = new byte[1024];
-					int l;
+					Console.ForegroundColor = ConsoleColor.Green;
+					Console.WriteLine("Соединение есть");
+					Console.ResetColor();
+					Console.WriteLine();
+
+					String strSend = "GET\r\n\r\n";												// метод запроса - GET()
+					socket.Send(System.Text.Encoding.ASCII.GetBytes(strSend));                  // отправка на сервер сообщения о типе запроса (в байтах)
+					Console.ForegroundColor = ConsoleColor.Green;
+					Console.WriteLine("Отправлен GET запрос");
+					Console.ResetColor();
+					Console.WriteLine();
+
+					byte[] buffer = new byte[1024];												// создаем массив buffer
+					int bytesNumber;															// создаем переменную bytesNumber
 					string text = null;
 					do
 					{
-						l = socket.Receive(buffer);
-						text += System.Text.Encoding.ASCII.
-						GetString(buffer, 0, l);
-					} while (l > 0);
+						Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine("Получили промежуточный text:");
+						Console.ResetColor();
+						Console.WriteLine();
+						bytesNumber = socket.Receive(buffer);                                   // получение с сервера сведений о количестве байт информации в буфере
+						Console.WriteLine("bytesNumber = " + bytesNumber);
+						text += System.Text.Encoding.ASCII.GetString(buffer, 0, bytesNumber);
+						Console.WriteLine(text);
+					} while (bytesNumber > 0);
+					
+					Console.ForegroundColor = ConsoleColor.Red;
+					Console.WriteLine("Получили окончательный text:");
+					Console.ResetColor();
+					Console.WriteLine(text);
+					Console.WriteLine();
 				}
 				else
 					Console.WriteLine("Error");
