@@ -11,6 +11,8 @@
 */
 
 using System;
+using System.Net;
+using System.Net.Sockets;
 
 namespace ClientServereNetworking
 {
@@ -22,7 +24,35 @@ namespace ClientServereNetworking
 			
 			Console.WriteLine("Создадим сокет клиента");
 
+			IPAddress ip = IPAddress.Parse("207.46.197.32");
+			IPEndPoint endPoint = new IPEndPoint(ip, 80);
+			Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+			try
+			{
+				socket.Connect(endPoint);
+				if (socket.Connected)
+				{
+					String strSend = "GET\r\n\r\n";
+					socket.Send(System.Text.Encoding.ASCII.
+					GetBytes(strSend));
+					byte[] buffer = new byte[1024];
+					int l;
+					string text = null;
+					do
+					{
+						l = socket.Receive(buffer);
+						text += System.Text.Encoding.ASCII.
+						GetString(buffer, 0, l);
+					} while (l > 0);
+				}
+				else
+					Console.WriteLine("Error");
+			}
+			catch (SocketException ex)
+			{ 
 
+			Console.WriteLine(ex.Message);
+			}
 			// 2. Создание сокета сервера
 			Console.WriteLine("Создадим сокет конечной точки (сервера)");
 		}
