@@ -1,0 +1,16 @@
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.exe
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.deps.json
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.runtimeconfig.json
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.runtimeconfig.dev.json
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.dll
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ref\ClientServereNetworking.dll
+F:\Programs_repository\NetWork Programming\bin\Debug\net5.0\ClientServereNetworking.pdb
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.csproj.AssemblyReference.cache
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.GeneratedMSBuildEditorConfig.editorconfig
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.AssemblyInfoInputs.cache
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.AssemblyInfo.cs
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.csproj.CoreCompileInputs.cache
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.dll
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ref\ClientServereNetworking.dll
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.pdb
+F:\Programs_repository\NetWork Programming\obj\Debug\net5.0\ClientServereNetworking.genruntimeconfig.cache
